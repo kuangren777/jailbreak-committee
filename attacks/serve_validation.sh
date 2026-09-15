@@ -4,7 +4,7 @@
 #   Guard -> GPU5   Llama-2 -> GPU6   internlm -> GPU0   Baichuan2 -> GPU1
 set -uo pipefail
 M="$HOME/models"; LOG="$HOME/vllm_logs"; CSH="$HOME/miniconda3/etc/profile.d/conda.sh"
-TPL="$HOME/projects/FITEE26/scripts/chat_templates"; mkdir -p "$LOG"
+TPL="${PROJECT_ROOT:-$HOME/projects/committee}/scripts/chat_templates"; mkdir -p "$LOG"
 # name|dir|gpu|port|template|util|maxlen
 SPECS=(
   "Llama-Guard-3-8B|Llama-Guard-3-8B|5|8006||0.45|2048"

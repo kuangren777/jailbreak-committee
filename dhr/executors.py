@@ -133,7 +133,7 @@ class VLLMExecutor(Executor):
 class ExecutorSpec:
     """Static config for one pool member (§3 of paper_guideline)."""
     name: str
-    model_path: str          # ~/models/<name>
+    model_path: str          # local dir or a Hugging Face repo id
     gpu: int
     port: int
     vuln: Set = field(default_factory=set)
@@ -149,12 +149,12 @@ class ExecutorSpec:
 # 2023-generation pool (6 organizations / base families, weaker alignment ->
 # more heterogeneous, less-overlapping jailbreak susceptibility than 2024 models).
 DEFAULT_POOL: List[ExecutorSpec] = [
-    ExecutorSpec("Llama-2-7b-chat",   "~/models/Llama-2-7b-chat",   gpu=0, port=8000),
-    ExecutorSpec("Mistral-7B-Instruct-v0.1", "~/models/Mistral-7B-Instruct-v0.1", gpu=1, port=8001),
-    ExecutorSpec("Qwen-7B-Chat",      "~/models/Qwen-7B-Chat",      gpu=2, port=8002),
-    ExecutorSpec("internlm-chat-7b",  "~/models/internlm-chat-7b",  gpu=3, port=8003),
-    ExecutorSpec("vicuna-7b-v1.5",    "~/models/vicuna-7b-v1.5",    gpu=4, port=8004),
-    ExecutorSpec("Baichuan2-7B-Chat", "~/models/Baichuan2-7B-Chat", gpu=5, port=8005),
+    ExecutorSpec("Llama-2-7b-chat",   "~/models/Llama-2-7b-chat",   gpu=0, port=8000),  # meta-llama/Llama-2-7b-chat-hf
+    ExecutorSpec("Mistral-7B-Instruct-v0.1", "~/models/Mistral-7B-Instruct-v0.1", gpu=1, port=8001),  # mistralai/Mistral-7B-Instruct-v0.1
+    ExecutorSpec("Qwen-7B-Chat",      "~/models/Qwen-7B-Chat",      gpu=2, port=8002),  # Qwen/Qwen-7B-Chat
+    ExecutorSpec("internlm-chat-7b",  "~/models/internlm-chat-7b",  gpu=3, port=8003),  # internlm/internlm-chat-7b
+    ExecutorSpec("vicuna-7b-v1.5",    "~/models/vicuna-7b-v1.5",    gpu=4, port=8004),  # lmsys/vicuna-7b-v1.5
+    ExecutorSpec("Baichuan2-7B-Chat", "~/models/Baichuan2-7B-Chat", gpu=5, port=8005),  # baichuan-inc/Baichuan2-7B-Chat
 ]
 
 

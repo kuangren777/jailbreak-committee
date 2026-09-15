@@ -4,7 +4,7 @@
 # judge with an independent model, then adjudicate with the real BGE-M3 clustering.
 set -uo pipefail
 GPU="${GPU:-0}"
-ROOT="$HOME/projects/FITEE26"; M="$HOME/models"; OUT="$ROOT/results/live_pair"
+ROOT="${PROJECT_ROOT:-$HOME/projects/committee}"; M="$HOME/models"; OUT="$ROOT/results/live_pair"
 LOG="$HOME/vllm_logs"; CSH="$HOME/miniconda3/etc/profile.d/conda.sh"
 TPL="$ROOT/scripts/chat_templates"
 mkdir -p "$OUT" "$LOG"

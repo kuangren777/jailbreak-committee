@@ -6,7 +6,7 @@
 # detector on the adaptive successes. Leaves the other five cards free.
 set -uo pipefail
 ATT_GPU="${ATT_GPU:-1}"; TGT_GPU="${TGT_GPU:-6}"; GUARD_GPU="${GUARD_GPU:-3}"
-ROOT="$HOME/projects/FITEE26"; M="$HOME/models"; OUT="$ROOT/results/pair"
+ROOT="${PROJECT_ROOT:-$HOME/projects/committee}"; M="$HOME/models"; OUT="$ROOT/results/pair"
 LOG="$HOME/vllm_logs"; CSH="$HOME/miniconda3/etc/profile.d/conda.sh"
 TPL="$ROOT/scripts/chat_templates"
 mkdir -p "$OUT" "$LOG"

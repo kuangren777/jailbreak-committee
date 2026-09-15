@@ -3,7 +3,7 @@
 # FREE cards only (GPU 3/4/5 are occupied by other jobs). One model per GPU.
 #   Guard-3   -> GPU6   Llama-2 -> GPU2   Mistral -> GPU0   Qwen -> GPU1
 set -uo pipefail
-ROOT="$HOME/projects/FITEE26"; M="$HOME/models"; LOG="$HOME/vllm_logs"
+ROOT="${PROJECT_ROOT:-$HOME/projects/committee}"; M="$HOME/models"; LOG="$HOME/vllm_logs"
 CSH="$HOME/miniconda3/etc/profile.d/conda.sh"; TPL="$ROOT/scripts/chat_templates"
 mkdir -p "$LOG"
 

@@ -5,7 +5,7 @@
 # template so each gets its .jinja, else vLLM 400s and ASR is a fake 0.000.
 set -uo pipefail
 M="$HOME/models"; LOG="$HOME/vllm_logs"; CSH="$HOME/miniconda3/etc/profile.d/conda.sh"
-TPL="$HOME/projects/FITEE26/scripts/chat_templates"
+TPL="${PROJECT_ROOT:-$HOME/projects/committee}/scripts/chat_templates"
 
 for p in 8000 8001 8002; do tmux kill-session -t vllm_$p 2>/dev/null || true; done
 sleep 5

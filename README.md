@@ -24,6 +24,7 @@ reproduce.py recomputes every gate number in the paper from results/
 ## Reproducing the paper without any inference
 
 ```bash
+git clone <this repository> && cd jailbreak-committee
 python3 reproduce.py
 ```
 
@@ -66,10 +67,13 @@ to this repository or to any result file.
 
 ## Models
 
-**First pool, open weights, released in 2023.** Qwen-7B-Chat, Llama-2-7b-chat,
-InternLM-Chat-7B, Mistral-7B-Instruct-v0.1, Vicuna-7B-v1.5, Baichuan2-7B-Chat. Served
+**First pool, open weights, released in 2023.** `Qwen/Qwen-7B-Chat`,
+`meta-llama/Llama-2-7b-chat-hf`, `internlm/internlm-chat-7b`,
+`mistralai/Mistral-7B-Instruct-v0.1`, `lmsys/vicuna-7b-v1.5`,
+`baichuan-inc/Baichuan2-7B-Chat`. Served
 with vLLM using each model's native chat template, greedy decoding and a 512-token
-limit. Judged by Llama Guard 3 8B and, independently, by Qwen3-14B.
+limit. Judged by `meta-llama/Llama-Guard-3-8B` and, independently, by `Qwen/Qwen3-14B`.
+The adjudicator embeds answers with `BAAI/bge-m3`.
 
 **Second pool, hosted, all released after 2023.** GPT-4o (`gpt-4o-2024-11-20`),
 Claude Haiku 4.5, Gemini 2.5 Flash, DeepSeek-V3.1, GLM-4.5-Air, Qwen-Flash. Queried

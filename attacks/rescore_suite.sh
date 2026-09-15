@@ -10,7 +10,7 @@
 # One model on one card at a time, so the other cards stay free.
 set -uo pipefail
 GPU="${GPU:-2}"
-ROOT="$HOME/projects/FITEE26"; M="$HOME/models"; OUT="$ROOT/results/rescore"
+ROOT="${PROJECT_ROOT:-$HOME/projects/committee}"; M="$HOME/models"; OUT="$ROOT/results/rescore"
 LOG="$HOME/vllm_logs"; CSH="$HOME/miniconda3/etc/profile.d/conda.sh"
 TPL="$ROOT/scripts/chat_templates"
 mkdir -p "$OUT"

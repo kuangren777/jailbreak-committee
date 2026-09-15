@@ -3,7 +3,7 @@
 # with BOTH judges and rebuild the pair ranking under each. One card, one model at a time.
 set -uo pipefail
 GPU="${GPU:-1}"
-ROOT="$HOME/projects/FITEE26"; M="$HOME/models"; OUT="$ROOT/results/rescore"
+ROOT="${PROJECT_ROOT:-$HOME/projects/committee}"; M="$HOME/models"; OUT="$ROOT/results/rescore"
 LOG="$HOME/vllm_logs"; CSH="$HOME/miniconda3/etc/profile.d/conda.sh"
 TPL="$ROOT/scripts/chat_templates"
 

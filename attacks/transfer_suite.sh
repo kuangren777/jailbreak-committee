@@ -5,7 +5,7 @@
 # the verdicts from the pair run.
 set -uo pipefail
 GPU="${GPU:-3}"
-ROOT="$HOME/projects/FITEE26"; M="$HOME/models"; OUT="$ROOT/results/pair"
+ROOT="${PROJECT_ROOT:-$HOME/projects/committee}"; M="$HOME/models"; OUT="$ROOT/results/pair"
 RAW="$OUT/transfer_raw"; LOG="$HOME/vllm_logs"; CSH="$HOME/miniconda3/etc/profile.d/conda.sh"
 TPL="$ROOT/scripts/chat_templates"; PAIR="$OUT/pair_llama2.jsonl"
 mkdir -p "$RAW"
