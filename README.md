@@ -59,7 +59,7 @@ python3 attacks/hub_judge.py           # second pool, one judge per invocation
 python3 attacks/gate.py                # the identifiability gate
 python3 attacks/pool_summary.py        # per-model worst case and judge agreement
 python3 attacks/pair_released.py       # what the adjudicator actually releases
-python3 attacks/adaptive_pair.py       # tuned attacker against the deployed pair
+python3 attacks/pair_adaptive.py       # tuned attacker against the deployed pair
 ```
 
 Gateway credentials are read from `~/.config/camel-hub/paper.env` and are never written

@@ -13,6 +13,18 @@ def run(cmd):
         print(r.stderr[-800:]); sys.exit(1)
     return json.loads(r.stdout[r.stdout.index("{"):])
 
+print("[0/3] every released module parses")
+import ast, glob as _glob
+_bad = []
+for _f in sorted(_glob.glob("**/*.py", recursive=True)):
+    try:
+        ast.parse(open(_f, errors="replace").read())
+    except SyntaxError as _e:
+        _bad.append("%s line %s" % (_f, _e.lineno))
+if _bad:
+    print("  syntax errors:", _bad); sys.exit(1)
+print("  %d modules parse" % len(_glob.glob("**/*.py", recursive=True)))
+
 print("[1/3] identifiability gate, first pool, two judges")
 g1 = run(["attacks/gate.py", "--verdicts", "results/rescore_2023/verdicts_*.jsonl",
           "--fields", "verdict", "verdict2", "--labels", "llama_guard", "qwen3_14b",
