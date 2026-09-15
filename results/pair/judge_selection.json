@@ -1,0 +1,44 @@
+{
+ "design": {
+  "models": 6,
+  "variants": 20,
+  "behaviors_per_cell": 25,
+  "max_new_tokens": 512,
+  "note": "same stored responses scored by both judges"
+ },
+ "judge_agreement": 0.767,
+ "n_scored": 2947,
+ "llama_guard": {
+  "worst_single": {
+   "Baichuan2-7b": 0.92,
+   "Llama-2-7b": 0.72,
+   "Mistral-7B-v0.1": 0.92,
+   "Qwen-7B": 0.76,
+   "internlm-7b": 0.96,
+   "vicuna-7b": 0.88
+  },
+  "best_single": "Llama-2-7b",
+  "argmin_comonotone": "Baichuan2-7b+Llama-2-7b",
+  "argmin_comonotone_value": 0.44
+ },
+ "qwen3_14b": {
+  "worst_single": {
+   "Baichuan2-7b": 1.0,
+   "Llama-2-7b": 0.875,
+   "Mistral-7B-v0.1": 1.0,
+   "Qwen-7B": 0.88,
+   "internlm-7b": 0.96,
+   "vicuna-7b": 0.96
+  },
+  "best_single": "Llama-2-7b",
+  "argmin_comonotone": "Qwen-7B+internlm-7b",
+  "argmin_comonotone_value": 0.792,
+  "guard_selected_pair_value": 0.84
+ },
+ "robustness": {
+  "min_n_0": "Qwen-7B+internlm-7b 0.792",
+  "min_n_20": "Qwen-7B+internlm-7b 0.792",
+  "min_n_24": "Baichuan2-7b+Qwen-7B 0.720",
+  "guard_side_stable": "Baichuan2-7b+Llama-2-7b 0.440 at all thresholds"
+ }
+}

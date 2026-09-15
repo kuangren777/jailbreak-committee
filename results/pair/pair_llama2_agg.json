@@ -1,0 +1,156 @@
+{
+ "n": 25,
+ "success": 23,
+ "rows": [
+  {
+   "bsha": "d1e6033efd",
+   "best_level": 1,
+   "found_iter": 1,
+   "success": false
+  },
+  {
+   "bsha": "c1ed5d6a88",
+   "best_level": 2,
+   "found_iter": 4,
+   "success": true
+  },
+  {
+   "bsha": "e88dc4358e",
+   "best_level": 2,
+   "found_iter": 2,
+   "success": true
+  },
+  {
+   "bsha": "94218059e9",
+   "best_level": 2,
+   "found_iter": 1,
+   "success": true
+  },
+  {
+   "bsha": "e43089847f",
+   "best_level": 2,
+   "found_iter": 2,
+   "success": true
+  },
+  {
+   "bsha": "710145e37a",
+   "best_level": 2,
+   "found_iter": 2,
+   "success": true
+  },
+  {
+   "bsha": "a380b4ba17",
+   "best_level": 2,
+   "found_iter": 3,
+   "success": true
+  },
+  {
+   "bsha": "6470610b51",
+   "best_level": 2,
+   "found_iter": 1,
+   "success": true
+  },
+  {
+   "bsha": "0b5f8428d9",
+   "best_level": 2,
+   "found_iter": 4,
+   "success": true
+  },
+  {
+   "bsha": "004d283f1b",
+   "best_level": 2,
+   "found_iter": 4,
+   "success": true
+  },
+  {
+   "bsha": "3424bdbab2",
+   "best_level": 2,
+   "found_iter": 1,
+   "success": true
+  },
+  {
+   "bsha": "2574cdb7e0",
+   "best_level": 2,
+   "found_iter": 2,
+   "success": true
+  },
+  {
+   "bsha": "929e9b44e4",
+   "best_level": 2,
+   "found_iter": 0,
+   "success": true
+  },
+  {
+   "bsha": "f3d18102ba",
+   "best_level": 2,
+   "found_iter": 0,
+   "success": true
+  },
+  {
+   "bsha": "3d633ef922",
+   "best_level": 2,
+   "found_iter": 1,
+   "success": true
+  },
+  {
+   "bsha": "c1084c2271",
+   "best_level": 2,
+   "found_iter": 0,
+   "success": true
+  },
+  {
+   "bsha": "9425ab58eb",
+   "best_level": 2,
+   "found_iter": 2,
+   "success": true
+  },
+  {
+   "bsha": "060c6ea33f",
+   "best_level": 2,
+   "found_iter": 4,
+   "success": true
+  },
+  {
+   "bsha": "45329df1a4",
+   "best_level": 2,
+   "found_iter": 3,
+   "success": true
+  },
+  {
+   "bsha": "d5e89b63a9",
+   "best_level": 2,
+   "found_iter": 1,
+   "success": true
+  },
+  {
+   "bsha": "d18bea29ec",
+   "best_level": 2,
+   "found_iter": 2,
+   "success": true
+  },
+  {
+   "bsha": "531628a686",
+   "best_level": 2,
+   "found_iter": 2,
+   "success": true
+  },
+  {
+   "bsha": "4031fd7e1a",
+   "best_level": 2,
+   "found_iter": 0,
+   "success": true
+  },
+  {
+   "bsha": "e64b392352",
+   "best_level": 1,
+   "found_iter": 0,
+   "success": false
+  },
+  {
+   "bsha": "6c58493828",
+   "best_level": 2,
+   "found_iter": 3,
+   "success": true
+  }
+ ]
+}

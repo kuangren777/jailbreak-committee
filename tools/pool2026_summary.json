@@ -1,0 +1,120 @@
+{
+ "grok4": {
+  "n_variants": 20,
+  "per_model": {
+   "claude-haiku45": {
+    "worst": 0.04,
+    "worst_col": [
+     "codechameleon",
+     "length"
+    ],
+    "mean": 0.002
+   },
+   "deepseek-v31": {
+    "worst": 0.32,
+    "worst_col": [
+     "deepinception",
+     "documentary"
+    ],
+    "mean": 0.068
+   },
+   "gemini25flash": {
+    "worst": 0.696,
+    "worst_col": [
+     "deepinception",
+     "scifi"
+    ],
+    "mean": 0.197
+   },
+   "glm45air": {
+    "worst": 0.2,
+    "worst_col": [
+     "pasttense",
+     "retrospective"
+    ],
+    "mean": 0.046
+   },
+   "gpt4o": {
+    "worst": 0.44,
+    "worst_col": [
+     "deepinception",
+     "scifi"
+    ],
+    "mean": 0.103
+   },
+   "qwen-flash": {
+    "worst": 0.957,
+    "worst_col": [
+     "deepinception",
+     "documentary"
+    ],
+    "mean": 0.244
+   }
+  },
+  "pool_worst": 0.957,
+  "best_single": "claude-haiku45"
+ },
+ "kimi": {
+  "n_variants": 20,
+  "per_model": {
+   "claude-haiku45": {
+    "worst": 0.04,
+    "worst_col": [
+     "codechameleon",
+     "length"
+    ],
+    "mean": 0.002
+   },
+   "deepseek-v31": {
+    "worst": 0.2,
+    "worst_col": [
+     "deepinception",
+     "documentary"
+    ],
+    "mean": 0.034
+   },
+   "gemini25flash": {
+    "worst": 0.68,
+    "worst_col": [
+     "codechameleon",
+     "binarytree"
+    ],
+    "mean": 0.207
+   },
+   "glm45air": {
+    "worst": 0.04,
+    "worst_col": [
+     "codechameleon",
+     "binarytree"
+    ],
+    "mean": 0.014
+   },
+   "gpt4o": {
+    "worst": 0.44,
+    "worst_col": [
+     "deepinception",
+     "scifi"
+    ],
+    "mean": 0.128
+   },
+   "qwen-flash": {
+    "worst": 1.0,
+    "worst_col": [
+     "deepinception",
+     "scifi"
+    ],
+    "mean": 0.384
+   }
+  },
+  "pool_worst": 1.0,
+  "best_single": "claude-haiku45"
+ },
+ "agreement": {
+  "n_both": 2985,
+  "agree": 0.936,
+  "judges": [
+   "grok4",
+   "kimi"
+  ]
+ }
+}

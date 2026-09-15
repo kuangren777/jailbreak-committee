@@ -1,0 +1,29 @@
+{
+ "reward_ablation": {
+  "adj(ours)": {
+   "mean": 0.542,
+   "std": 0.01
+  },
+  "hsec-structural": {
+   "mean": 0.839,
+   "std": 0.017
+  },
+  "none(uniform)": {
+   "mean": 0.84,
+   "std": 0.01
+  }
+ },
+ "fixed_distribution": {
+  "best": 0.297,
+  "mean": 0.83,
+  "median": 0.951,
+  "worst": 1.0,
+  "best_idx": 6,
+  "n": 20
+ },
+ "fixed_best_committee": [
+  "Llama-2-7b",
+  "Qwen-7B",
+  "Baichuan2-7b"
+ ]
+}

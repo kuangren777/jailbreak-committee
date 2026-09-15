@@ -1,0 +1,11 @@
+{
+ "bf_overall_oracle": 0.048,
+ "fixed_init_analytic": 0.175,
+ "bf_perphase_oracle": 0.003,
+ "Exp3-SE-track": 0.139,
+ "Exp3-SE (no track)": 0.071,
+ "Fixed-init (realistic)": 0.176,
+ "Random": 0.185,
+ "scheduling_beats_oracle_fixed": false,
+ "scheduling_beats_fixed_init": true
+}

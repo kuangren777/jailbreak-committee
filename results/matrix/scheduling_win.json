@@ -1,0 +1,18 @@
+{
+ "masked": [
+  "Llama-2-7b",
+  "gemma-7b"
+ ],
+ "candidates": [
+  "Mistral-7B-v0.1",
+  "Qwen-7B",
+  "internlm-7b",
+  "vicuna-7b",
+  "Baichuan2-7b",
+  "deepseek-7b",
+  "glm-4-9b"
+ ],
+ "T": 1200,
+ "phases": 6,
+ "results": []
+}

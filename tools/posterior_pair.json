@@ -1,0 +1,36 @@
+{
+ "plug_in": {
+  "pair": [
+   "Baichuan2-7b",
+   "Llama-2-7b"
+  ],
+  "comonotone": 0.48,
+  "independent": 0.368,
+  "llama2_alone": 0.68
+ },
+ "posterior": {
+  "draws": 200000,
+  "pair_comonotone_median": 0.515,
+  "pair_comonotone_ci95": [
+   0.38,
+   0.665
+  ],
+  "pair_independent_median": 0.403,
+  "pair_independent_ci95": [
+   0.283,
+   0.557
+  ],
+  "llama2_alone_median": 0.683,
+  "llama2_alone_ci95": [
+   0.537,
+   0.836
+  ],
+  "P_pair_beats_llama2": 0.939,
+  "argmin_share": {
+   "Baichuan2-7b+Llama-2-7b": 0.908,
+   "Llama-2-7b+internlm-7b": 0.045,
+   "Llama-2-7b+vicuna-7b": 0.022,
+   "Llama-2-7b+Qwen-7B": 0.013
+  }
+ }
+}

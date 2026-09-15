@@ -1,0 +1,14 @@
+{
+ "Exp3-SE-adj": {
+  "ASR": 0.439,
+  "recovery_rounds": 189.6
+ },
+ "Random": {
+  "ASR": 0.618,
+  "recovery_rounds": 400.0
+ },
+ "_meta": {
+  "switch_at": 400,
+  "universal_family": "jb_Toxic_1"
+ }
+}

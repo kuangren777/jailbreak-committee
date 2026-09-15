@@ -1,0 +1,78 @@
+{
+ "matched": true,
+ "n_matched": 2985,
+ "grok4": {
+  "models": [
+   "claude-haiku45",
+   "deepseek-v31",
+   "gemini25flash",
+   "glm45air",
+   "gpt4o",
+   "qwen-flash"
+  ],
+  "n_variants": 20,
+  "behaviors_per_cell": [
+   23,
+   24,
+   25
+  ],
+  "best_single": "claude-haiku45",
+  "best_single_worst": 0.04,
+  "nominal_pair": "claude-haiku45+glm45air",
+  "nominal_pair_value": 0.0,
+  "runner_up": "claude-haiku45+deepseek-v31",
+  "runner_up_value": 0.04,
+  "margin": 0.04,
+  "stability": 0.405,
+  "p_pair_beats_best_single": 0.639,
+  "top_by_draws": [
+   [
+    "claude-haiku45+deepseek-v31",
+    0.595
+   ],
+   [
+    "claude-haiku45+glm45air",
+    0.405
+   ]
+  ],
+  "gate": "deploy best single",
+  "stability_threshold": 0.9
+ },
+ "kimi": {
+  "models": [
+   "claude-haiku45",
+   "deepseek-v31",
+   "gemini25flash",
+   "glm45air",
+   "gpt4o",
+   "qwen-flash"
+  ],
+  "n_variants": 20,
+  "behaviors_per_cell": [
+   23,
+   24,
+   25
+  ],
+  "best_single": "claude-haiku45",
+  "best_single_worst": 0.04,
+  "nominal_pair": "claude-haiku45+glm45air",
+  "nominal_pair_value": 0.0,
+  "runner_up": "claude-haiku45+deepseek-v31",
+  "runner_up_value": 0.04,
+  "margin": 0.04,
+  "stability": 0.576,
+  "p_pair_beats_best_single": 0.647,
+  "top_by_draws": [
+   [
+    "claude-haiku45+glm45air",
+    0.576
+   ],
+   [
+    "claude-haiku45+deepseek-v31",
+    0.424
+   ]
+  ],
+  "gate": "deploy best single",
+  "stability_threshold": 0.9
+ }
+}

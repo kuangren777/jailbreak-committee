@@ -1,0 +1,22 @@
+{
+ "schedule": [
+  "jb_Toxic_1",
+  "jb_Anarchy_0"
+ ],
+ "Exp3-SE-adj": 0.494,
+ "Exp3-SE-track(share=.05)": 0.742,
+ "Random": 0.758,
+ "best-fixed-overall(oracle)": 0.28,
+ "best-fixed-per-phase(oracle)": 0.254,
+ "best_arm_phase1": [
+  "Llama-2-7b",
+  "Qwen-7B",
+  "Baichuan2-7b"
+ ],
+ "best_arm_phase2": [
+  "Llama-2-7b",
+  "internlm-7b",
+  "Baichuan2-7b"
+ ],
+ "best_arm_drifts": true
+}

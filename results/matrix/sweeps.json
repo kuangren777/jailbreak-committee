@@ -1,0 +1,73 @@
+{
+ "m_sweep": [
+  {
+   "m": 1,
+   "majority_needed": 1,
+   "best": 0.0,
+   "mean": 0.7,
+   "worst": 1.0
+  },
+  {
+   "m": 2,
+   "majority_needed": 2,
+   "best": 0.0,
+   "mean": 0.46,
+   "worst": 1.0
+  },
+  {
+   "m": 3,
+   "majority_needed": 2,
+   "best": 0.297,
+   "mean": 0.83,
+   "worst": 1.0
+  },
+  {
+   "m": 4,
+   "majority_needed": 3,
+   "best": 0.297,
+   "mean": 0.68,
+   "worst": 1.0
+  },
+  {
+   "m": 5,
+   "majority_needed": 3,
+   "best": 0.902,
+   "mean": 0.951,
+   "worst": 1.0
+  },
+  {
+   "m": 6,
+   "majority_needed": 4,
+   "best": 0.902,
+   "mean": 0.902,
+   "worst": 0.902
+  }
+ ],
+ "tau_sweep": [
+  {
+   "tau": 0.3,
+   "best": 1.0,
+   "mean": 1.0,
+   "n_immune_committees": 0
+  },
+  {
+   "tau": 0.5,
+   "best": 0.0,
+   "mean": 0.8,
+   "n_immune_committees": 4
+  },
+  {
+   "tau": 0.7,
+   "best": 0.0,
+   "mean": 0.8,
+   "n_immune_committees": 4
+  },
+  {
+   "tau": 0.9,
+   "best": 0.0,
+   "mean": 0.5,
+   "n_immune_committees": 10
+  }
+ ],
+ "universal_family": "jb_Toxic_1"
+}

@@ -1,0 +1,32 @@
+{
+ "bf_overall_oracle": 0.503,
+ "bf_perphase_oracle": 0.459,
+ "fixed_init_committee": [
+  "Qwen-7B",
+  "Baichuan2-7b",
+  "deepseek-7b"
+ ],
+ "Exp3-SE-track": 0.703,
+ "Exp3-SE (no track)": 0.652,
+ "Fixed-init (realistic)": 0.556,
+ "Random": 0.694,
+ "beats_oracle_fixed": false,
+ "beats_realistic_fixed_init": false,
+ "pool": [
+  "Mistral-7B-v0.1",
+  "Qwen-7B",
+  "internlm-7b",
+  "vicuna-7b",
+  "Baichuan2-7b",
+  "deepseek-7b",
+  "glm-4-9b"
+ ],
+ "schedule": [
+  "jb_Exception_0",
+  "jb_Basic_1",
+  "jb_Anarchy_0",
+  "jb_Anarchy_1",
+  "jb_Toxic_1",
+  "jb_Opposite_0"
+ ]
+}

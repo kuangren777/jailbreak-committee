@@ -1,0 +1,130 @@
+{
+ "llama_guard": {
+  "per_cell_n": [
+   14,
+   16,
+   20,
+   22,
+   23,
+   24,
+   25
+  ],
+  "worst_single": {
+   "Baichuan2-7b": 0.92,
+   "Llama-2-7b": 0.72,
+   "Mistral-7B-v0.1": 0.92,
+   "Qwen-7B": 0.76,
+   "internlm-7b": 0.96,
+   "vicuna-7b": 0.88
+  },
+  "best_single": "Llama-2-7b",
+  "top5": [
+   [
+    "Baichuan2-7b+Llama-2-7b",
+    0.44
+   ],
+   [
+    "Llama-2-7b+internlm-7b",
+    0.68
+   ],
+   [
+    "Llama-2-7b+Mistral-7B-v0.1",
+    0.72
+   ],
+   [
+    "Llama-2-7b+Qwen-7B",
+    0.72
+   ],
+   [
+    "Llama-2-7b+vicuna-7b",
+    0.72
+   ]
+  ],
+  "argmin": "Baichuan2-7b+Llama-2-7b",
+  "argmin_value": 0.44,
+  "boot_top": [
+   [
+    "Baichuan2-7b+Llama-2-7b",
+    0.978
+   ],
+   [
+    "Llama-2-7b+internlm-7b",
+    0.009
+   ],
+   [
+    "Llama-2-7b+Qwen-7B",
+    0.008
+   ],
+   [
+    "Baichuan2-7b+Qwen-7B",
+    0.003
+   ]
+  ],
+  "P_argmin_reproduces": 0.978
+ },
+ "qwen3_14b": {
+  "per_cell_n": [
+   14,
+   16,
+   20,
+   22,
+   23,
+   24,
+   25
+  ],
+  "worst_single": {
+   "Baichuan2-7b": 1.0,
+   "Llama-2-7b": 0.875,
+   "Mistral-7B-v0.1": 1.0,
+   "Qwen-7B": 0.88,
+   "internlm-7b": 0.96,
+   "vicuna-7b": 0.96
+  },
+  "best_single": "Llama-2-7b",
+  "top5": [
+   [
+    "Qwen-7B+internlm-7b",
+    0.792
+   ],
+   [
+    "Llama-2-7b+Qwen-7B",
+    0.826
+   ],
+   [
+    "Llama-2-7b+internlm-7b",
+    0.833
+   ],
+   [
+    "internlm-7b+vicuna-7b",
+    0.833
+   ],
+   [
+    "Baichuan2-7b+Llama-2-7b",
+    0.84
+   ]
+  ],
+  "argmin": "Qwen-7B+internlm-7b",
+  "argmin_value": 0.792,
+  "boot_top": [
+   [
+    "Baichuan2-7b+Qwen-7B",
+    0.268
+   ],
+   [
+    "Llama-2-7b+internlm-7b",
+    0.175
+   ],
+   [
+    "Qwen-7B+internlm-7b",
+    0.172
+   ],
+   [
+    "Baichuan2-7b+Llama-2-7b",
+    0.161
+   ]
+  ],
+  "P_argmin_reproduces": 0.172
+ },
+ "judge_agreement": 0.767,
+ "n_jointly_parsed": 2947
+}

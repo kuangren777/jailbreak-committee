@@ -1,0 +1,187 @@
+{
+ "n_llama2_success": 23,
+ "marginal": {
+  "Baichuan2-7b": {
+   "k": 21,
+   "n": 23,
+   "rate": 0.913,
+   "wilson95": [
+    0.732,
+    0.976
+   ]
+  },
+  "InternLM-7b": {
+   "k": 17,
+   "n": 23,
+   "rate": 0.739,
+   "wilson95": [
+    0.535,
+    0.875
+   ]
+  },
+  "Mistral-7b": {
+   "k": 22,
+   "n": 23,
+   "rate": 0.957,
+   "wilson95": [
+    0.79,
+    0.992
+   ]
+  },
+  "Qwen-7b": {
+   "k": 20,
+   "n": 23,
+   "rate": 0.87,
+   "wilson95": [
+    0.679,
+    0.955
+   ]
+  },
+  "Vicuna-7b": {
+   "k": 21,
+   "n": 23,
+   "rate": 0.913,
+   "wilson95": [
+    0.732,
+    0.976
+   ]
+  }
+ },
+ "joint_pairs": {
+  "InternLM-7b+Qwen-7b": {
+   "k": 15,
+   "n": 23,
+   "rate": 0.652,
+   "wilson95": [
+    0.449,
+    0.812
+   ]
+  },
+  "Baichuan2-7b+InternLM-7b": {
+   "k": 17,
+   "n": 23,
+   "rate": 0.739,
+   "wilson95": [
+    0.535,
+    0.875
+   ]
+  },
+  "InternLM-7b+Llama-2-7b": {
+   "k": 17,
+   "n": 23,
+   "rate": 0.739,
+   "wilson95": [
+    0.535,
+    0.875
+   ]
+  },
+  "InternLM-7b+Mistral-7b": {
+   "k": 17,
+   "n": 23,
+   "rate": 0.739,
+   "wilson95": [
+    0.535,
+    0.875
+   ]
+  },
+  "InternLM-7b+Vicuna-7b": {
+   "k": 17,
+   "n": 23,
+   "rate": 0.739,
+   "wilson95": [
+    0.535,
+    0.875
+   ]
+  },
+  "Baichuan2-7b+Qwen-7b": {
+   "k": 18,
+   "n": 23,
+   "rate": 0.783,
+   "wilson95": [
+    0.581,
+    0.903
+   ]
+  },
+  "Qwen-7b+Vicuna-7b": {
+   "k": 18,
+   "n": 23,
+   "rate": 0.783,
+   "wilson95": [
+    0.581,
+    0.903
+   ]
+  },
+  "Baichuan2-7b+Mistral-7b": {
+   "k": 20,
+   "n": 23,
+   "rate": 0.87,
+   "wilson95": [
+    0.679,
+    0.955
+   ]
+  },
+  "Llama-2-7b+Qwen-7b": {
+   "k": 20,
+   "n": 23,
+   "rate": 0.87,
+   "wilson95": [
+    0.679,
+    0.955
+   ]
+  },
+  "Mistral-7b+Qwen-7b": {
+   "k": 20,
+   "n": 23,
+   "rate": 0.87,
+   "wilson95": [
+    0.679,
+    0.955
+   ]
+  },
+  "Mistral-7b+Vicuna-7b": {
+   "k": 20,
+   "n": 23,
+   "rate": 0.87,
+   "wilson95": [
+    0.679,
+    0.955
+   ]
+  },
+  "Baichuan2-7b+Llama-2-7b": {
+   "k": 21,
+   "n": 23,
+   "rate": 0.913,
+   "wilson95": [
+    0.732,
+    0.976
+   ]
+  },
+  "Baichuan2-7b+Vicuna-7b": {
+   "k": 21,
+   "n": 23,
+   "rate": 0.913,
+   "wilson95": [
+    0.732,
+    0.976
+   ]
+  },
+  "Llama-2-7b+Vicuna-7b": {
+   "k": 21,
+   "n": 23,
+   "rate": 0.913,
+   "wilson95": [
+    0.732,
+    0.976
+   ]
+  },
+  "Llama-2-7b+Mistral-7b": {
+   "k": 22,
+   "n": 23,
+   "rate": 0.957,
+   "wilson95": [
+    0.79,
+    0.992
+   ]
+  }
+ }
+}

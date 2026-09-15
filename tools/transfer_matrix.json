@@ -1,0 +1,30 @@
+{
+ "n_llama2_success": 23,
+ "members": {
+  "InternLM-7b": {
+   "transfer": 0.739,
+   "broke": 17,
+   "of": 23
+  },
+  "Qwen-7b": {
+   "transfer": 0.87,
+   "broke": 20,
+   "of": 23
+  },
+  "Baichuan2-7b": {
+   "transfer": 0.913,
+   "broke": 21,
+   "of": 23
+  },
+  "Vicuna-7b": {
+   "transfer": 0.913,
+   "broke": 21,
+   "of": 23
+  },
+  "Mistral-7b": {
+   "transfer": 0.957,
+   "broke": 22,
+   "of": 23
+  }
+ }
+}
