@@ -1,23 +1,25 @@
-"""Minimal OpenAI-compatible client for the camel-hub gateway.
+"""Minimal client for an OpenAI-compatible LLM gateway.
 
-Credentials come from ~/.config/camel-hub/paper.env (mode 600) and are never written
+Credentials come from $GATEWAY_URL and $GATEWAY_KEY, or from the file named by
+$GATEWAY_ENV_FILE (mode 600), and are never written
 to the repo or to any result file. Used to calibrate a 2026 model pool with the same
 prompt variants and behaviors as the local 2023 pool.
 """
 import json, os, time, urllib.error, urllib.request
 
-ENV = os.path.expanduser("~/.config/camel-hub/paper.env")
+ENV = os.path.expanduser(os.environ.get("GATEWAY_ENV_FILE",
+                                        "~/.config/llm-gateway/gateway.env"))
 
 
 def _creds():
-    url = os.environ.get("CAMEL_HUB_URL")
-    key = os.environ.get("CAMEL_HUB_KEY")
+    url = os.environ.get("GATEWAY_URL")
+    key = os.environ.get("GATEWAY_KEY")
     if not (url and key) and os.path.exists(ENV):
         for line in open(ENV):
             line = line.strip()
-            if line.startswith("CAMEL_HUB_URL="):
+            if line.startswith("GATEWAY_URL="):
                 url = line.split("=", 1)[1]
-            elif line.startswith("CAMEL_HUB_KEY="):
+            elif line.startswith("GATEWAY_KEY="):
                 key = line.split("=", 1)[1]
     if not (url and key):
         raise SystemExit("missing gateway credentials, expected %s" % ENV)

@@ -62,8 +62,10 @@ python3 attacks/pair_released.py       # what the adjudicator actually releases
 python3 attacks/pair_adaptive.py       # tuned attacker against the deployed pair
 ```
 
-Gateway credentials are read from `~/.config/camel-hub/paper.env` and are never written
-to this repository or to any result file.
+The second pool is served by an OpenAI-compatible gateway. Point the client at it with
+`GATEWAY_URL` and `GATEWAY_KEY`, or with a mode-600 file named by `GATEWAY_ENV_FILE`
+that carries those two keys. Credentials are never written to this repository or to any
+result file.
 
 ## Models
 
