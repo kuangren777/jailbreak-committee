@@ -1,0 +1,12 @@
+{
+ "either": {
+  "tau": "0.8",
+  "spearman": 0.8749999999999999,
+  "same_argmin": true
+ },
+ "filtered": {
+  "tau": "0.5",
+  "spearman": 0.6285714285714286,
+  "same_argmin": false
+ }
+}

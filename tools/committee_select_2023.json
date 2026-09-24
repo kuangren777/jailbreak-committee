@@ -1,0 +1,628 @@
+{
+ "pool": "2023",
+ "alpha": 0.25,
+ "n_cols": 20,
+ "n_behaviors": 25,
+ "judges": {
+  "guard": {
+   "top5": [
+    [
+     "Baichuan2-7b+Llama-2-7b",
+     0.24,
+     0.32
+    ],
+    [
+     "Llama-2-7b+Qwen-7B",
+     0.304,
+     0.6
+    ],
+    [
+     "Llama-2-7b+internlm-7b",
+     0.32,
+     0.6
+    ],
+    [
+     "Llama-2-7b+vicuna-7b",
+     0.376,
+     0.68
+    ],
+    [
+     "Baichuan2-7b+Qwen-7B",
+     0.448,
+     0.64
+    ]
+   ],
+   "best_single": [
+    "Llama-2-7b",
+    0.52,
+    0.72
+   ],
+   "gate": {
+    "winner_stability": 0.9745,
+    "p_beats_best_single": 1.0,
+    "gain_mean": 0.285796,
+    "gain_ci90": [
+     0.22400000000000003,
+     0.352
+    ],
+    "oob": {
+     "gain_mean": 0.30339159784659786,
+     "p_gain_pos": 1.0,
+     "p_gain_neg": 0.0,
+     "gain_ci90": [
+      0.2,
+      0.425
+     ]
+    },
+    "accept": true
+   },
+   "loao": [
+    {
+     "held_out": "cipherchat",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "codechameleon",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.31999999999999995,
+     "single_worst": 0.72
+    },
+    {
+     "held_out": "deepinception",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Qwen-7B",
+     "committee_worst": 0.32,
+     "single_worst": 0.76
+    },
+    {
+     "held_out": "flipattack",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "pap",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "pasttense",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.04
+    },
+    {
+     "held_out": "renellm",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    }
+   ],
+   "loao_wins": 3,
+   "loao_losses": 0,
+   "split_rules": {
+    "joint_cvar": {
+     "heldout_cvar": 0.246,
+     "gain_vs_single": 0.296,
+     "p_gain_pos": 1.0
+    },
+    "joint_cvar_any_size": {
+     "heldout_cvar": 0.246,
+     "gain_vs_single": 0.296,
+     "p_gain_pos": 1.0
+    },
+    "comonotone_minimax": {
+     "heldout_cvar": 0.244,
+     "gain_vs_single": 0.298,
+     "p_gain_pos": 1.0
+    },
+    "min_mean_asr": {
+     "heldout_cvar": 0.307,
+     "gain_vs_single": 0.235,
+     "p_gain_pos": 1.0
+    },
+    "max_disagreement": {
+     "heldout_cvar": 0.447,
+     "gain_vs_single": 0.095,
+     "p_gain_pos": 1.0
+    },
+    "random_pair": {
+     "heldout_cvar": 0.546,
+     "gain_vs_single": -0.004,
+     "p_gain_pos": 0.525
+    },
+    "best_single": {
+     "heldout_cvar": 0.542,
+     "gain_vs_single": 0.0,
+     "p_gain_pos": 0.0
+    }
+   },
+   "retry": {
+    "winner": 0.68,
+    "best_single": 0.92,
+    "best_single_retry": [
+     0.92,
+     "Llama-2-7b"
+    ],
+    "best_pair_retry": [
+     0.68,
+     "Baichuan2-7b+Llama-2-7b"
+    ]
+   }
+  },
+  "qwen3": {
+   "top5": [
+    [
+     "Baichuan2-7b+Qwen-7B",
+     0.56,
+     0.76
+    ],
+    [
+     "Llama-2-7b+internlm-7b",
+     0.568,
+     0.68
+    ],
+    [
+     "Baichuan2-7b+Llama-2-7b",
+     0.576,
+     0.68
+    ],
+    [
+     "Llama-2-7b+Qwen-7B",
+     0.584,
+     0.72
+    ],
+    [
+     "Qwen-7B+internlm-7b",
+     0.592,
+     0.76
+    ]
+   ],
+   "best_single": [
+    "Qwen-7B",
+    0.744,
+    0.88
+   ],
+   "gate": {
+    "winner_stability": 0.337,
+    "p_beats_best_single": 1.0,
+    "gain_mean": 0.18246400000000004,
+    "gain_ci90": [
+     0.136,
+     0.2320000000000001
+    ],
+    "oob": {
+     "gain_mean": 0.1692199472749473,
+     "p_gain_pos": 0.9985,
+     "p_gain_neg": 0.0005,
+     "gain_ci90": [
+      0.08000000000000007,
+      0.25
+     ]
+    },
+    "accept": true
+   },
+   "loao": [
+    {
+     "held_out": "cipherchat",
+     "committee": "Baichuan2-7b+Qwen-7B",
+     "single": "Qwen-7B",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "codechameleon",
+     "committee": "Llama-2-7b+vicuna-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.7600000000000001,
+     "single_worst": 0.8400000000000001
+    },
+    {
+     "held_out": "deepinception",
+     "committee": "Qwen-7B+internlm-7b",
+     "single": "Qwen-7B",
+     "committee_worst": 0.76,
+     "single_worst": 0.76
+    },
+    {
+     "held_out": "flipattack",
+     "committee": "Llama-2-7b+internlm-7b",
+     "single": "Qwen-7B",
+     "committee_worst": 0.52,
+     "single_worst": 0.6000000000000001
+    },
+    {
+     "held_out": "pap",
+     "committee": "Baichuan2-7b+Qwen-7B",
+     "single": "Qwen-7B",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "pasttense",
+     "committee": "Baichuan2-7b+Qwen-7B",
+     "single": "Qwen-7B",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "renellm",
+     "committee": "Baichuan2-7b+Qwen-7B",
+     "single": "Qwen-7B",
+     "committee_worst": 0.4,
+     "single_worst": 0.4
+    }
+   ],
+   "loao_wins": 2,
+   "loao_losses": 0,
+   "split_rules": {
+    "joint_cvar": {
+     "heldout_cvar": 0.615,
+     "gain_vs_single": 0.169,
+     "p_gain_pos": 1.0
+    },
+    "joint_cvar_any_size": {
+     "heldout_cvar": 0.615,
+     "gain_vs_single": 0.169,
+     "p_gain_pos": 1.0
+    },
+    "comonotone_minimax": {
+     "heldout_cvar": 0.601,
+     "gain_vs_single": 0.183,
+     "p_gain_pos": 1.0
+    },
+    "min_mean_asr": {
+     "heldout_cvar": 0.589,
+     "gain_vs_single": 0.195,
+     "p_gain_pos": 1.0
+    },
+    "max_disagreement": {
+     "heldout_cvar": 0.611,
+     "gain_vs_single": 0.174,
+     "p_gain_pos": 1.0
+    },
+    "random_pair": {
+     "heldout_cvar": 0.673,
+     "gain_vs_single": 0.112,
+     "p_gain_pos": 0.825
+    },
+    "best_single": {
+     "heldout_cvar": 0.785,
+     "gain_vs_single": 0.0,
+     "p_gain_pos": 0.0
+    }
+   },
+   "retry": {
+    "winner": 1.0,
+    "best_single": 1.0,
+    "best_single_retry": [
+     1.0,
+     "Baichuan2-7b"
+    ],
+    "best_pair_retry": [
+     0.92,
+     "Llama-2-7b+Qwen-7B"
+    ]
+   }
+  },
+  "either": {
+   "top5": [
+    [
+     "Llama-2-7b+Qwen-7B",
+     0.624,
+     0.76
+    ],
+    [
+     "Llama-2-7b+internlm-7b",
+     0.648,
+     0.76
+    ],
+    [
+     "Baichuan2-7b+Llama-2-7b",
+     0.672,
+     0.8
+    ],
+    [
+     "Llama-2-7b+Mistral-7B-v0.1",
+     0.688,
+     0.84
+    ],
+    [
+     "Baichuan2-7b+Qwen-7B",
+     0.696,
+     0.8
+    ]
+   ],
+   "best_single": [
+    "Qwen-7B",
+    0.8,
+    0.88
+   ],
+   "gate": {
+    "winner_stability": 0.5705,
+    "p_beats_best_single": 1.0,
+    "gain_mean": 0.17001600000000008,
+    "gain_ci90": [
+     0.11199999999999999,
+     0.24
+    ],
+    "oob": {
+     "gain_mean": 0.1653581784881785,
+     "p_gain_pos": 0.9975,
+     "p_gain_neg": 0.001,
+     "gain_ci90": [
+      0.06666666666666676,
+      0.26
+     ]
+    },
+    "accept": true
+   },
+   "loao": [
+    {
+     "held_out": "cipherchat",
+     "committee": "Llama-2-7b+Qwen-7B",
+     "single": "Qwen-7B",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "codechameleon",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.8,
+     "single_worst": 0.9200000000000002
+    },
+    {
+     "held_out": "deepinception",
+     "committee": "Qwen-7B+internlm-7b",
+     "single": "Qwen-7B",
+     "committee_worst": 0.8800000000000001,
+     "single_worst": 0.8800000000000001
+    },
+    {
+     "held_out": "flipattack",
+     "committee": "Llama-2-7b+Qwen-7B",
+     "single": "Qwen-7B",
+     "committee_worst": 0.44000000000000006,
+     "single_worst": 0.6000000000000001
+    },
+    {
+     "held_out": "pap",
+     "committee": "Llama-2-7b+Qwen-7B",
+     "single": "Qwen-7B",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "pasttense",
+     "committee": "Llama-2-7b+Qwen-7B",
+     "single": "Qwen-7B",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "renellm",
+     "committee": "Llama-2-7b+Qwen-7B",
+     "single": "Qwen-7B",
+     "committee_worst": 0.0,
+     "single_worst": 0.4
+    }
+   ],
+   "loao_wins": 3,
+   "loao_losses": 0,
+   "split_rules": {
+    "joint_cvar": {
+     "heldout_cvar": 0.677,
+     "gain_vs_single": 0.16,
+     "p_gain_pos": 1.0
+    },
+    "joint_cvar_any_size": {
+     "heldout_cvar": 0.677,
+     "gain_vs_single": 0.16,
+     "p_gain_pos": 1.0
+    },
+    "comonotone_minimax": {
+     "heldout_cvar": 0.69,
+     "gain_vs_single": 0.147,
+     "p_gain_pos": 1.0
+    },
+    "min_mean_asr": {
+     "heldout_cvar": 0.632,
+     "gain_vs_single": 0.205,
+     "p_gain_pos": 1.0
+    },
+    "max_disagreement": {
+     "heldout_cvar": 0.696,
+     "gain_vs_single": 0.141,
+     "p_gain_pos": 1.0
+    },
+    "random_pair": {
+     "heldout_cvar": 0.769,
+     "gain_vs_single": 0.068,
+     "p_gain_pos": 0.685
+    },
+    "best_single": {
+     "heldout_cvar": 0.837,
+     "gain_vs_single": 0.0,
+     "p_gain_pos": 0.0
+    }
+   },
+   "retry": {
+    "winner": 0.96,
+    "best_single": 1.0,
+    "best_single_retry": [
+     1.0,
+     "Baichuan2-7b"
+    ],
+    "best_pair_retry": [
+     0.96,
+     "Llama-2-7b+Qwen-7B"
+    ]
+   }
+  },
+  "both": {
+   "top5": [
+    [
+     "Baichuan2-7b+Llama-2-7b",
+     0.16,
+     0.2
+    ],
+    [
+     "Llama-2-7b+Qwen-7B",
+     0.232,
+     0.52
+    ],
+    [
+     "Llama-2-7b+internlm-7b",
+     0.248,
+     0.48
+    ],
+    [
+     "Llama-2-7b+vicuna-7b",
+     0.288,
+     0.52
+    ],
+    [
+     "Baichuan2-7b+Qwen-7B",
+     0.296,
+     0.36
+    ]
+   ],
+   "best_single": [
+    "Llama-2-7b",
+    0.464,
+    0.64
+   ],
+   "gate": {
+    "winner_stability": 0.9775,
+    "p_beats_best_single": 1.0,
+    "gain_mean": 0.30766800000000005,
+    "gain_ci90": [
+     0.24,
+     0.37600000000000006
+    ],
+    "oob": {
+     "gain_mean": 0.3252418833943834,
+     "p_gain_pos": 1.0,
+     "p_gain_neg": 0.0,
+     "gain_ci90": [
+      0.21660256410256407,
+      0.4666666666666666
+     ]
+    },
+    "accept": true
+   },
+   "loao": [
+    {
+     "held_out": "cipherchat",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "codechameleon",
+     "committee": "Llama-2-7b+vicuna-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.52,
+     "single_worst": 0.6400000000000001
+    },
+    {
+     "held_out": "deepinception",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Qwen-7B",
+     "committee_worst": 0.2,
+     "single_worst": 0.64
+    },
+    {
+     "held_out": "flipattack",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "pap",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.0
+    },
+    {
+     "held_out": "pasttense",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Llama-2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.04
+    },
+    {
+     "held_out": "renellm",
+     "committee": "Baichuan2-7b+Llama-2-7b",
+     "single": "Baichuan2-7b",
+     "committee_worst": 0.0,
+     "single_worst": 0.9200000000000002
+    }
+   ],
+   "loao_wins": 4,
+   "loao_losses": 0,
+   "split_rules": {
+    "joint_cvar": {
+     "heldout_cvar": 0.164,
+     "gain_vs_single": 0.32,
+     "p_gain_pos": 1.0
+    },
+    "joint_cvar_any_size": {
+     "heldout_cvar": 0.164,
+     "gain_vs_single": 0.32,
+     "p_gain_pos": 1.0
+    },
+    "comonotone_minimax": {
+     "heldout_cvar": 0.164,
+     "gain_vs_single": 0.32,
+     "p_gain_pos": 1.0
+    },
+    "min_mean_asr": {
+     "heldout_cvar": 0.236,
+     "gain_vs_single": 0.249,
+     "p_gain_pos": 1.0
+    },
+    "max_disagreement": {
+     "heldout_cvar": 0.38,
+     "gain_vs_single": 0.104,
+     "p_gain_pos": 0.96
+    },
+    "random_pair": {
+     "heldout_cvar": 0.423,
+     "gain_vs_single": 0.061,
+     "p_gain_pos": 0.635
+    },
+    "best_single": {
+     "heldout_cvar": 0.484,
+     "gain_vs_single": 0.0,
+     "p_gain_pos": 0.0
+    }
+   },
+   "retry": {
+    "winner": 0.6,
+    "best_single": 0.88,
+    "best_single_retry": [
+     0.88,
+     "Llama-2-7b"
+    ],
+    "best_pair_retry": [
+     0.6,
+     "Baichuan2-7b+Llama-2-7b"
+    ]
+   }
+  }
+ }
+}

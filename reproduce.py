@@ -1,75 +1,70 @@
-"""Recompute every gate number in the paper from the released aggregates.
+"""Recompute the selection and gate numbers of the paper from the released verdicts.
 
-No model inference. Reads only verdict-level records under results/ and prints the
-value the paper reports next to the value recomputed here.
+Runs tools/committee_select.py on the open pool (results/scale) and the hosted pool
+(results/hub2026_scale), then prints each value the paper reports beside the value
+recomputed here. Released worst-quarter ASR needs the answer embeddings, which are
+withheld, so those two values are checked against tools/serving_replay_scale.json.
+Needs numpy only.
+
+Usage: python3 reproduce.py
 """
-import json, subprocess, sys, os
+import json, os, subprocess, sys, tempfile
 
-CHECKS = []
+HERE = os.path.dirname(os.path.abspath(__file__))
+os.chdir(HERE)
+f2 = lambda x: "%.2f" % x
+BOUGHT, SINGLE, FILT = "Baichuan2-7b+Llama-2-7b", "Llama-2-7b", "Mistral-7B-v0.1+vicuna-7b"
 
-def run(cmd):
-    r = subprocess.run([sys.executable] + cmd, capture_output=True, text=True)
-    if r.returncode:
-        print(r.stderr[-800:]); sys.exit(1)
-    return json.loads(r.stdout[r.stdout.index("{"):])
 
-print("[0/3] every released module parses")
-import ast, glob as _glob
-_bad = []
-for _f in sorted(_glob.glob("**/*.py", recursive=True)):
-    try:
-        ast.parse(open(_f, errors="replace").read())
-    except SyntaxError as _e:
-        _bad.append("%s line %s" % (_f, _e.lineno))
-if _bad:
-    print("  syntax errors:", _bad); sys.exit(1)
-print("  %d modules parse" % len(_glob.glob("**/*.py", recursive=True)))
+def run(pool):
+    out = os.path.join(tempfile.mkdtemp(), pool + ".json")
+    subprocess.run([sys.executable, "tools/committee_select.py", pool, out], check=True, stdout=subprocess.DEVNULL)
+    return json.load(open(out))
 
-print("[1/3] identifiability gate, first pool, two judges")
-g1 = run(["attacks/gate.py", "--verdicts", "results/rescore_2023/verdicts_*.jsonl",
-          "--fields", "verdict", "verdict2", "--labels", "llama_guard", "qwen3_14b",
-          "--matched", "--out", "/tmp/_g1.json"])
-CHECKS += [
-    ("matched answers scored by both judges", 2947, g1["n_matched"]),
-    ("guard selected pair bound", 0.44, g1["llama_guard"]["nominal_pair_value"]),
-    ("guard runner up", 0.68, g1["llama_guard"]["runner_up_value"]),
-    ("guard bootstrap stability", 0.98, round(g1["llama_guard"]["stability"], 2)),
-    ("independent judge best stability", 0.26, round(g1["qwen3_14b"]["top_by_draws"][0][1], 2)),
-    ("guard gate decision", "deploy pair", g1["llama_guard"]["gate"]),
-    ("independent judge gate decision", "deploy best single", g1["qwen3_14b"]["gate"]),
-]
 
-print("[2/3] identifiability gate, second pool, two judges")
-g2 = run(["attacks/gate.py", "--verdicts", "results/hub2026/verdicts_*.jsonl",
-          "--fields", "verdict_a", "verdict_b", "--labels", "grok4", "kimi",
-          "--matched", "--out", "/tmp/_g2.json"])
-CHECKS += [
-    ("matched answers, second pool", 2985, g2["n_matched"]),
-    ("selected pair bound, grok-4", 0.0, g2["grok4"]["nominal_pair_value"]),
-    ("best single worst case", 0.04, g2["grok4"]["best_single_worst"]),
-    ("stability, grok-4", 0.41, round(g2["grok4"]["stability"], 2)),
-    ("stability, kimi-k2.5", 0.58, round(g2["kimi"]["stability"], 2)),
-    ("pair beats best single, grok-4", 0.64, round(g2["grok4"]["p_pair_beats_best_single"], 2)),
-    ("gate decision, grok-4", "deploy best single", g2["grok4"]["gate"]),
-    ("gate decision, kimi-k2.5", "deploy best single", g2["kimi"]["gate"]),
-]
+def main():
+    o, h = run("scale"), run("hub2026_scale")
+    unf = ("guard", "qwen3", "either", "both")
+    rows = [
+        ("pair bought under the union labels", BOUGHT, o["bought"]),
+        ("W of the bought pair, union", "0.56", f2(o["cross"][BOUGHT]["either"])),
+        ("W of the bought pair, Llama Guard", "0.26", f2(o["cross"][BOUGHT]["guard"])),
+        ("W of the bought pair, Qwen3-14B", "0.43", f2(o["cross"][BOUGHT]["qwen3"])),
+        ("best single model, union", SINGLE, o["judges"]["either"]["best_single"][0]),
+        ("W of the best single model, union", "0.73", f2(o["cross_best_single"]["either"])),
+        ("W of the best single model, Llama Guard", "0.48", f2(o["cross_best_single"]["guard"])),
+        ("W of the best single model, Qwen3-14B", "0.66", f2(o["cross_best_single"]["qwen3"])),
+        ("gate accepts the bought pair under all four label sets", "True",
+         str(all(o["bought_gate"][j]["accept"] for j in unf))),
+        ("largest margin delta at which the purchase holds", "0.15",
+         "%.2f" % (min(o["bought_gate"][j]["gain_q"] for j in unf) - 0.005)),
+        ("pair selected behind the filter", FILT, o["winners"]["filtered"]),
+        ("W of that pair behind the filter", "0.08", f2(o["judges"]["filtered"]["top5"][0][1])),
+        ("W of the best filtered single model", "0.26", f2(o["judges"]["filtered"]["best_single"][1])),
+        ("margin below which the filtered purchase holds", "0.17", f2(o["judges"]["filtered"]["gate"]["gain_q"])),
+        ("held-out W of JBS, Qwen3-14B", "0.42", f2(o["judges"]["qwen3"]["split_rules"]["joint_cvar"]["heldout_cvar"])),
+        ("held-out W of the comonotone minimax, Qwen3-14B", "0.54",
+         f2(o["judges"]["qwen3"]["split_rules"]["comonotone_minimax"]["heldout_cvar"])),
+        ("held-out families where the pair beats the best single model, union", "4", str(o["judges"]["either"]["loao_wins"])),
+        ("hosted pool, W of the best single model", "0.01", f2(h["judges"]["either"]["best_single"][1])),
+        ("hosted pool, W of the best pair", "0.00",
+         f2(min(c for _, c, _ in h["judges"]["either"]["top5"]))),
+        ("hosted pool, draws in which the gain exceeds delta", "0",
+         "%d" % round(max(j["gate"]["p_gain_gt_delta"] for j in h["judges"].values()) * 2000)),
+    ]
+    sr = json.load(open("tools/serving_replay_scale.json"))
+    rows += [("released worst-quarter ASR of the bought pair at tau 0.8 (stored replay)", "0.23",
+              f2(sr["committees"][BOUGHT]["either"]["0.8"]["released_cvar"])),
+             ("released worst-quarter ASR of the best single model (stored replay)", "0.73",
+              f2(sr["single"][SINGLE]["either"]["released_cvar"]))]
+    ok = 0
+    for name, paper, here in rows:
+        match = paper == here
+        ok += match
+        print(f"{'ok ' if match else 'DIFF'}  {name:<72} paper {paper:<26} here {here}")
+    print(f"\n{ok} of {len(rows)} checks reproduce")
+    sys.exit(0 if ok == len(rows) else 1)
 
-print("[3/3] per-model worst case and judge agreement, second pool")
-s2 = run(["attacks/pool_summary.py", "--verdicts", "results/hub2026/verdicts_*.jsonl",
-          "--fields", "verdict_a", "verdict_b", "--labels", "grok4", "kimi", "--out", "/tmp/_s2.json"])
-CHECKS += [
-    ("judge agreement, second pool", 0.936, s2["agreement"]["agree"]),
-    ("weakest member, grok-4", 0.957, s2["grok4"]["per_model"]["qwen-flash"]["worst"]),
-    ("weakest member, kimi-k2.5", 1.0, s2["kimi"]["per_model"]["qwen-flash"]["worst"]),
-    ("strongest member, both judges", 0.04, s2["grok4"]["per_model"]["claude-haiku45"]["worst"]),
-]
 
-print()
-bad = 0
-for name, paper, got in CHECKS:
-    ok = (paper == got)
-    bad += not ok
-    print("%-42s paper=%-20s recomputed=%-20s %s" % (name, paper, got, "ok" if ok else "MISMATCH"))
-print()
-print("%d of %d checks reproduce" % (len(CHECKS) - bad, len(CHECKS)))
-sys.exit(1 if bad else 0)
+if __name__ == "__main__":
+    main()

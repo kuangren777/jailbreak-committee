@@ -18,5 +18,9 @@ where `variants` returns `(variant_name, prompt)` pairs. The variant names this 
 expects appear in the `variant` field of every record under `results/`, so the column
 order of the susceptibility matrix is recoverable without any prompt text.
 
-Nothing downstream of generation is withheld. The aggregate verdicts under `results/`
+The BGE-M3 answer embeddings (`results/scale/emb.npy`) are also withheld, since they are
+computed from the model outputs. `results/scale/emb.jsonl` keeps their row order and refusal
+flags, and the replay they feed is released as `tools/serving_replay_scale.json`.
+
+Nothing else downstream of generation is withheld. The aggregate verdicts under `results/`
 reproduce every number and every figure in the paper with no model inference at all.

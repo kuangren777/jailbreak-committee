@@ -59,7 +59,7 @@ def main():
     lock = threading.Lock(); f = open(a.out, "a"); c = {"n": 0}
 
     def work(r):
-        o = {k: r[k] for k in ("model", "attack", "variant", "bsha")}
+        o = {k: r[k] for k in ("model", "kind", "attack", "variant", "bsha") if k in r}
         prompt = RUBRIC.format(req=r["prompt"][:a.max_chars], ans=r["text"][:a.max_chars])
         try:
             txt, _ = hub.chat(a.judge, prompt, max_tokens=a.max_tokens)

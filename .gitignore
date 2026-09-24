@@ -3,3 +3,5 @@ __pycache__/
 .env
 *.env
 raw_*.jsonl
+results/scale/emb.npy
+__pycache__/

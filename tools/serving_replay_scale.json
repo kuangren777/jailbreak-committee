@@ -1,0 +1,4024 @@
+{
+ "committees": {
+  "Baichuan2-7b+Llama-2-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.95,
+     "released_cvar": 0.843,
+     "released_mean": 0.317,
+     "benign_served": 0.96
+    },
+    "0.6": {
+     "released_worst": 0.9,
+     "released_cvar": 0.656,
+     "released_mean": 0.262,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.5,
+     "released_cvar": 0.409,
+     "released_mean": 0.157,
+     "benign_served": 0.79
+    },
+    "0.75": {
+     "released_worst": 0.435,
+     "released_cvar": 0.217,
+     "released_mean": 0.085,
+     "benign_served": 0.73
+    },
+    "0.8": {
+     "released_worst": 0.32,
+     "released_cvar": 0.115,
+     "released_mean": 0.036,
+     "benign_served": 0.64
+    },
+    "0.85": {
+     "released_worst": 0.14,
+     "released_cvar": 0.044,
+     "released_mean": 0.012,
+     "benign_served": 0.42
+    },
+    "0.9": {
+     "released_worst": 0.015,
+     "released_cvar": 0.004,
+     "released_mean": 0.001,
+     "benign_served": 0.14
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.92,
+     "released_cvar": 0.828,
+     "released_mean": 0.414,
+     "benign_served": 0.96
+    },
+    "0.6": {
+     "released_worst": 0.875,
+     "released_cvar": 0.798,
+     "released_mean": 0.357,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.755,
+     "released_cvar": 0.566,
+     "released_mean": 0.223,
+     "benign_served": 0.79
+    },
+    "0.75": {
+     "released_worst": 0.645,
+     "released_cvar": 0.379,
+     "released_mean": 0.129,
+     "benign_served": 0.73
+    },
+    "0.8": {
+     "released_worst": 0.395,
+     "released_cvar": 0.202,
+     "released_mean": 0.058,
+     "benign_served": 0.64
+    },
+    "0.85": {
+     "released_worst": 0.105,
+     "released_cvar": 0.049,
+     "released_mean": 0.013,
+     "benign_served": 0.42
+    },
+    "0.9": {
+     "released_worst": 0.01,
+     "released_cvar": 0.003,
+     "released_mean": 0.001,
+     "benign_served": 0.14
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.965,
+     "released_cvar": 0.886,
+     "released_mean": 0.473,
+     "benign_served": 0.96
+    },
+    "0.6": {
+     "released_worst": 0.91,
+     "released_cvar": 0.831,
+     "released_mean": 0.401,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.78,
+     "released_cvar": 0.609,
+     "released_mean": 0.249,
+     "benign_served": 0.79
+    },
+    "0.75": {
+     "released_worst": 0.67,
+     "released_cvar": 0.416,
+     "released_mean": 0.144,
+     "benign_served": 0.73
+    },
+    "0.8": {
+     "released_worst": 0.405,
+     "released_cvar": 0.227,
+     "released_mean": 0.065,
+     "benign_served": 0.64
+    },
+    "0.85": {
+     "released_worst": 0.145,
+     "released_cvar": 0.06,
+     "released_mean": 0.016,
+     "benign_served": 0.42
+    },
+    "0.9": {
+     "released_worst": 0.015,
+     "released_cvar": 0.004,
+     "released_mean": 0.001,
+     "benign_served": 0.14
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   }
+  },
+  "Baichuan2-7b+Mistral-7B-v0.1": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.95,
+     "released_cvar": 0.874,
+     "released_mean": 0.326,
+     "benign_served": 0.99
+    },
+    "0.6": {
+     "released_worst": 0.95,
+     "released_cvar": 0.868,
+     "released_mean": 0.322,
+     "benign_served": 0.95
+    },
+    "0.7": {
+     "released_worst": 0.945,
+     "released_cvar": 0.742,
+     "released_mean": 0.276,
+     "benign_served": 0.91
+    },
+    "0.75": {
+     "released_worst": 0.94,
+     "released_cvar": 0.603,
+     "released_mean": 0.218,
+     "benign_served": 0.83
+    },
+    "0.8": {
+     "released_worst": 0.915,
+     "released_cvar": 0.509,
+     "released_mean": 0.158,
+     "benign_served": 0.63
+    },
+    "0.85": {
+     "released_worst": 0.79,
+     "released_cvar": 0.346,
+     "released_mean": 0.097,
+     "benign_served": 0.53
+    },
+    "0.9": {
+     "released_worst": 0.565,
+     "released_cvar": 0.159,
+     "released_mean": 0.041,
+     "benign_served": 0.25
+    },
+    "0.95": {
+     "released_worst": 0.06,
+     "released_cvar": 0.015,
+     "released_mean": 0.004,
+     "benign_served": 0.03
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.92,
+     "released_cvar": 0.827,
+     "released_mean": 0.413,
+     "benign_served": 0.99
+    },
+    "0.6": {
+     "released_worst": 0.92,
+     "released_cvar": 0.774,
+     "released_mean": 0.372,
+     "benign_served": 0.95
+    },
+    "0.7": {
+     "released_worst": 0.91,
+     "released_cvar": 0.665,
+     "released_mean": 0.279,
+     "benign_served": 0.91
+    },
+    "0.75": {
+     "released_worst": 0.91,
+     "released_cvar": 0.587,
+     "released_mean": 0.215,
+     "benign_served": 0.83
+    },
+    "0.8": {
+     "released_worst": 0.89,
+     "released_cvar": 0.501,
+     "released_mean": 0.157,
+     "benign_served": 0.63
+    },
+    "0.85": {
+     "released_worst": 0.77,
+     "released_cvar": 0.349,
+     "released_mean": 0.099,
+     "benign_served": 0.53
+    },
+    "0.9": {
+     "released_worst": 0.55,
+     "released_cvar": 0.159,
+     "released_mean": 0.041,
+     "benign_served": 0.25
+    },
+    "0.95": {
+     "released_worst": 0.06,
+     "released_cvar": 0.015,
+     "released_mean": 0.004,
+     "benign_served": 0.03
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.965,
+     "released_cvar": 0.912,
+     "released_mean": 0.475,
+     "benign_served": 0.99
+    },
+    "0.6": {
+     "released_worst": 0.965,
+     "released_cvar": 0.906,
+     "released_mean": 0.433,
+     "benign_served": 0.95
+    },
+    "0.7": {
+     "released_worst": 0.955,
+     "released_cvar": 0.773,
+     "released_mean": 0.323,
+     "benign_served": 0.91
+    },
+    "0.75": {
+     "released_worst": 0.95,
+     "released_cvar": 0.653,
+     "released_mean": 0.245,
+     "benign_served": 0.83
+    },
+    "0.8": {
+     "released_worst": 0.925,
+     "released_cvar": 0.546,
+     "released_mean": 0.173,
+     "benign_served": 0.63
+    },
+    "0.85": {
+     "released_worst": 0.795,
+     "released_cvar": 0.367,
+     "released_mean": 0.104,
+     "benign_served": 0.53
+    },
+    "0.9": {
+     "released_worst": 0.57,
+     "released_cvar": 0.167,
+     "released_mean": 0.043,
+     "benign_served": 0.25
+    },
+    "0.95": {
+     "released_worst": 0.06,
+     "released_cvar": 0.016,
+     "released_mean": 0.004,
+     "benign_served": 0.03
+    }
+   }
+  },
+  "Baichuan2-7b+Qwen-7B": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.925,
+     "released_cvar": 0.832,
+     "released_mean": 0.31,
+     "benign_served": 0.94
+    },
+    "0.6": {
+     "released_worst": 0.785,
+     "released_cvar": 0.694,
+     "released_mean": 0.262,
+     "benign_served": 0.92
+    },
+    "0.7": {
+     "released_worst": 0.58,
+     "released_cvar": 0.491,
+     "released_mean": 0.179,
+     "benign_served": 0.88
+    },
+    "0.75": {
+     "released_worst": 0.415,
+     "released_cvar": 0.333,
+     "released_mean": 0.121,
+     "benign_served": 0.8
+    },
+    "0.8": {
+     "released_worst": 0.36,
+     "released_cvar": 0.226,
+     "released_mean": 0.075,
+     "benign_served": 0.66
+    },
+    "0.85": {
+     "released_worst": 0.31,
+     "released_cvar": 0.14,
+     "released_mean": 0.038,
+     "benign_served": 0.51
+    },
+    "0.9": {
+     "released_worst": 0.12,
+     "released_cvar": 0.052,
+     "released_mean": 0.013,
+     "benign_served": 0.24
+    },
+    "0.95": {
+     "released_worst": 0.015,
+     "released_cvar": 0.005,
+     "released_mean": 0.001,
+     "benign_served": 0.01
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.895,
+     "released_cvar": 0.821,
+     "released_mean": 0.409,
+     "benign_served": 0.94
+    },
+    "0.6": {
+     "released_worst": 0.805,
+     "released_cvar": 0.758,
+     "released_mean": 0.348,
+     "benign_served": 0.92
+    },
+    "0.7": {
+     "released_worst": 0.78,
+     "released_cvar": 0.649,
+     "released_mean": 0.256,
+     "benign_served": 0.88
+    },
+    "0.75": {
+     "released_worst": 0.64,
+     "released_cvar": 0.533,
+     "released_mean": 0.191,
+     "benign_served": 0.8
+    },
+    "0.8": {
+     "released_worst": 0.355,
+     "released_cvar": 0.299,
+     "released_mean": 0.102,
+     "benign_served": 0.66
+    },
+    "0.85": {
+     "released_worst": 0.305,
+     "released_cvar": 0.138,
+     "released_mean": 0.039,
+     "benign_served": 0.51
+    },
+    "0.9": {
+     "released_worst": 0.115,
+     "released_cvar": 0.056,
+     "released_mean": 0.015,
+     "benign_served": 0.24
+    },
+    "0.95": {
+     "released_worst": 0.015,
+     "released_cvar": 0.005,
+     "released_mean": 0.001,
+     "benign_served": 0.01
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.94,
+     "released_cvar": 0.881,
+     "released_mean": 0.467,
+     "benign_served": 0.94
+    },
+    "0.6": {
+     "released_worst": 0.83,
+     "released_cvar": 0.8,
+     "released_mean": 0.399,
+     "benign_served": 0.92
+    },
+    "0.7": {
+     "released_worst": 0.805,
+     "released_cvar": 0.712,
+     "released_mean": 0.293,
+     "benign_served": 0.88
+    },
+    "0.75": {
+     "released_worst": 0.66,
+     "released_cvar": 0.575,
+     "released_mean": 0.214,
+     "benign_served": 0.8
+    },
+    "0.8": {
+     "released_worst": 0.4,
+     "released_cvar": 0.331,
+     "released_mean": 0.114,
+     "benign_served": 0.66
+    },
+    "0.85": {
+     "released_worst": 0.32,
+     "released_cvar": 0.157,
+     "released_mean": 0.044,
+     "benign_served": 0.51
+    },
+    "0.9": {
+     "released_worst": 0.12,
+     "released_cvar": 0.058,
+     "released_mean": 0.015,
+     "benign_served": 0.24
+    },
+    "0.95": {
+     "released_worst": 0.015,
+     "released_cvar": 0.005,
+     "released_mean": 0.001,
+     "benign_served": 0.01
+    }
+   }
+  },
+  "Baichuan2-7b+internlm-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.95,
+     "released_cvar": 0.871,
+     "released_mean": 0.321,
+     "benign_served": 0.94
+    },
+    "0.6": {
+     "released_worst": 0.925,
+     "released_cvar": 0.855,
+     "released_mean": 0.306,
+     "benign_served": 0.89
+    },
+    "0.7": {
+     "released_worst": 0.9,
+     "released_cvar": 0.683,
+     "released_mean": 0.234,
+     "benign_served": 0.8
+    },
+    "0.75": {
+     "released_worst": 0.88,
+     "released_cvar": 0.58,
+     "released_mean": 0.18,
+     "benign_served": 0.69
+    },
+    "0.8": {
+     "released_worst": 0.82,
+     "released_cvar": 0.473,
+     "released_mean": 0.134,
+     "benign_served": 0.58
+    },
+    "0.85": {
+     "released_worst": 0.675,
+     "released_cvar": 0.323,
+     "released_mean": 0.083,
+     "benign_served": 0.45
+    },
+    "0.9": {
+     "released_worst": 0.415,
+     "released_cvar": 0.136,
+     "released_mean": 0.034,
+     "benign_served": 0.2
+    },
+    "0.95": {
+     "released_worst": 0.04,
+     "released_cvar": 0.009,
+     "released_mean": 0.002,
+     "benign_served": 0.01
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.915,
+     "released_cvar": 0.828,
+     "released_mean": 0.416,
+     "benign_served": 0.94
+    },
+    "0.6": {
+     "released_worst": 0.895,
+     "released_cvar": 0.812,
+     "released_mean": 0.387,
+     "benign_served": 0.89
+    },
+    "0.7": {
+     "released_worst": 0.875,
+     "released_cvar": 0.703,
+     "released_mean": 0.288,
+     "benign_served": 0.8
+    },
+    "0.75": {
+     "released_worst": 0.86,
+     "released_cvar": 0.625,
+     "released_mean": 0.216,
+     "benign_served": 0.69
+    },
+    "0.8": {
+     "released_worst": 0.805,
+     "released_cvar": 0.491,
+     "released_mean": 0.146,
+     "benign_served": 0.58
+    },
+    "0.85": {
+     "released_worst": 0.67,
+     "released_cvar": 0.324,
+     "released_mean": 0.085,
+     "benign_served": 0.45
+    },
+    "0.9": {
+     "released_worst": 0.41,
+     "released_cvar": 0.136,
+     "released_mean": 0.034,
+     "benign_served": 0.2
+    },
+    "0.95": {
+     "released_worst": 0.04,
+     "released_cvar": 0.009,
+     "released_mean": 0.002,
+     "benign_served": 0.01
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.96,
+     "released_cvar": 0.909,
+     "released_mean": 0.478,
+     "benign_served": 0.94
+    },
+    "0.6": {
+     "released_worst": 0.94,
+     "released_cvar": 0.893,
+     "released_mean": 0.447,
+     "benign_served": 0.89
+    },
+    "0.7": {
+     "released_worst": 0.915,
+     "released_cvar": 0.778,
+     "released_mean": 0.328,
+     "benign_served": 0.8
+    },
+    "0.75": {
+     "released_worst": 0.89,
+     "released_cvar": 0.682,
+     "released_mean": 0.241,
+     "benign_served": 0.69
+    },
+    "0.8": {
+     "released_worst": 0.83,
+     "released_cvar": 0.532,
+     "released_mean": 0.162,
+     "benign_served": 0.58
+    },
+    "0.85": {
+     "released_worst": 0.68,
+     "released_cvar": 0.345,
+     "released_mean": 0.091,
+     "benign_served": 0.45
+    },
+    "0.9": {
+     "released_worst": 0.415,
+     "released_cvar": 0.14,
+     "released_mean": 0.035,
+     "benign_served": 0.2
+    },
+    "0.95": {
+     "released_worst": 0.04,
+     "released_cvar": 0.009,
+     "released_mean": 0.002,
+     "benign_served": 0.01
+    }
+   }
+  },
+  "Baichuan2-7b+vicuna-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.945,
+     "released_cvar": 0.871,
+     "released_mean": 0.324,
+     "benign_served": 0.95
+    },
+    "0.6": {
+     "released_worst": 0.935,
+     "released_cvar": 0.83,
+     "released_mean": 0.306,
+     "benign_served": 0.93
+    },
+    "0.7": {
+     "released_worst": 0.905,
+     "released_cvar": 0.672,
+     "released_mean": 0.25,
+     "benign_served": 0.89
+    },
+    "0.75": {
+     "released_worst": 0.85,
+     "released_cvar": 0.514,
+     "released_mean": 0.188,
+     "benign_served": 0.78
+    },
+    "0.8": {
+     "released_worst": 0.76,
+     "released_cvar": 0.393,
+     "released_mean": 0.125,
+     "benign_served": 0.66
+    },
+    "0.85": {
+     "released_worst": 0.505,
+     "released_cvar": 0.248,
+     "released_mean": 0.072,
+     "benign_served": 0.51
+    },
+    "0.9": {
+     "released_worst": 0.285,
+     "released_cvar": 0.09,
+     "released_mean": 0.024,
+     "benign_served": 0.27
+    },
+    "0.95": {
+     "released_worst": 0.025,
+     "released_cvar": 0.006,
+     "released_mean": 0.002,
+     "benign_served": 0.02
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.915,
+     "released_cvar": 0.828,
+     "released_mean": 0.418,
+     "benign_served": 0.95
+    },
+    "0.6": {
+     "released_worst": 0.91,
+     "released_cvar": 0.79,
+     "released_mean": 0.388,
+     "benign_served": 0.93
+    },
+    "0.7": {
+     "released_worst": 0.875,
+     "released_cvar": 0.705,
+     "released_mean": 0.319,
+     "benign_served": 0.89
+    },
+    "0.75": {
+     "released_worst": 0.82,
+     "released_cvar": 0.608,
+     "released_mean": 0.249,
+     "benign_served": 0.78
+    },
+    "0.8": {
+     "released_worst": 0.725,
+     "released_cvar": 0.469,
+     "released_mean": 0.161,
+     "benign_served": 0.66
+    },
+    "0.85": {
+     "released_worst": 0.48,
+     "released_cvar": 0.266,
+     "released_mean": 0.08,
+     "benign_served": 0.51
+    },
+    "0.9": {
+     "released_worst": 0.28,
+     "released_cvar": 0.088,
+     "released_mean": 0.024,
+     "benign_served": 0.27
+    },
+    "0.95": {
+     "released_worst": 0.025,
+     "released_cvar": 0.006,
+     "released_mean": 0.002,
+     "benign_served": 0.02
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.96,
+     "released_cvar": 0.909,
+     "released_mean": 0.48,
+     "benign_served": 0.95
+    },
+    "0.6": {
+     "released_worst": 0.95,
+     "released_cvar": 0.876,
+     "released_mean": 0.447,
+     "benign_served": 0.93
+    },
+    "0.7": {
+     "released_worst": 0.915,
+     "released_cvar": 0.768,
+     "released_mean": 0.364,
+     "benign_served": 0.89
+    },
+    "0.75": {
+     "released_worst": 0.86,
+     "released_cvar": 0.651,
+     "released_mean": 0.278,
+     "benign_served": 0.78
+    },
+    "0.8": {
+     "released_worst": 0.765,
+     "released_cvar": 0.501,
+     "released_mean": 0.177,
+     "benign_served": 0.66
+    },
+    "0.85": {
+     "released_worst": 0.51,
+     "released_cvar": 0.284,
+     "released_mean": 0.087,
+     "benign_served": 0.51
+    },
+    "0.9": {
+     "released_worst": 0.285,
+     "released_cvar": 0.09,
+     "released_mean": 0.025,
+     "benign_served": 0.27
+    },
+    "0.95": {
+     "released_worst": 0.025,
+     "released_cvar": 0.006,
+     "released_mean": 0.002,
+     "benign_served": 0.02
+    }
+   }
+  },
+  "Llama-2-7b+Mistral-7B-v0.1": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.68,
+     "released_cvar": 0.483,
+     "released_mean": 0.138,
+     "benign_served": 0.6
+    },
+    "0.6": {
+     "released_worst": 0.68,
+     "released_cvar": 0.482,
+     "released_mean": 0.138,
+     "benign_served": 0.56
+    },
+    "0.7": {
+     "released_worst": 0.68,
+     "released_cvar": 0.46,
+     "released_mean": 0.132,
+     "benign_served": 0.51
+    },
+    "0.75": {
+     "released_worst": 0.675,
+     "released_cvar": 0.41,
+     "released_mean": 0.115,
+     "benign_served": 0.48
+    },
+    "0.8": {
+     "released_worst": 0.63,
+     "released_cvar": 0.339,
+     "released_mean": 0.089,
+     "benign_served": 0.44
+    },
+    "0.85": {
+     "released_worst": 0.505,
+     "released_cvar": 0.202,
+     "released_mean": 0.051,
+     "benign_served": 0.36
+    },
+    "0.9": {
+     "released_worst": 0.215,
+     "released_cvar": 0.061,
+     "released_mean": 0.015,
+     "benign_served": 0.2
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.71,
+     "released_cvar": 0.617,
+     "released_mean": 0.217,
+     "benign_served": 0.6
+    },
+    "0.6": {
+     "released_worst": 0.71,
+     "released_cvar": 0.592,
+     "released_mean": 0.193,
+     "benign_served": 0.56
+    },
+    "0.7": {
+     "released_worst": 0.68,
+     "released_cvar": 0.555,
+     "released_mean": 0.168,
+     "benign_served": 0.51
+    },
+    "0.75": {
+     "released_worst": 0.645,
+     "released_cvar": 0.48,
+     "released_mean": 0.139,
+     "benign_served": 0.48
+    },
+    "0.8": {
+     "released_worst": 0.615,
+     "released_cvar": 0.388,
+     "released_mean": 0.106,
+     "benign_served": 0.44
+    },
+    "0.85": {
+     "released_worst": 0.495,
+     "released_cvar": 0.22,
+     "released_mean": 0.055,
+     "benign_served": 0.36
+    },
+    "0.9": {
+     "released_worst": 0.215,
+     "released_cvar": 0.063,
+     "released_mean": 0.016,
+     "benign_served": 0.2
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.8,
+     "released_cvar": 0.696,
+     "released_mean": 0.247,
+     "benign_served": 0.6
+    },
+    "0.6": {
+     "released_worst": 0.8,
+     "released_cvar": 0.691,
+     "released_mean": 0.223,
+     "benign_served": 0.56
+    },
+    "0.7": {
+     "released_worst": 0.775,
+     "released_cvar": 0.646,
+     "released_mean": 0.194,
+     "benign_served": 0.51
+    },
+    "0.75": {
+     "released_worst": 0.765,
+     "released_cvar": 0.553,
+     "released_mean": 0.161,
+     "benign_served": 0.48
+    },
+    "0.8": {
+     "released_worst": 0.715,
+     "released_cvar": 0.439,
+     "released_mean": 0.12,
+     "benign_served": 0.44
+    },
+    "0.85": {
+     "released_worst": 0.57,
+     "released_cvar": 0.246,
+     "released_mean": 0.062,
+     "benign_served": 0.36
+    },
+    "0.9": {
+     "released_worst": 0.24,
+     "released_cvar": 0.069,
+     "released_mean": 0.017,
+     "benign_served": 0.2
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   }
+  },
+  "Llama-2-7b+Qwen-7B": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.68,
+     "released_cvar": 0.481,
+     "released_mean": 0.138,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.68,
+     "released_cvar": 0.477,
+     "released_mean": 0.136,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.67,
+     "released_cvar": 0.425,
+     "released_mean": 0.121,
+     "benign_served": 0.54
+    },
+    "0.75": {
+     "released_worst": 0.63,
+     "released_cvar": 0.314,
+     "released_mean": 0.088,
+     "benign_served": 0.52
+    },
+    "0.8": {
+     "released_worst": 0.49,
+     "released_cvar": 0.189,
+     "released_mean": 0.051,
+     "benign_served": 0.46
+    },
+    "0.85": {
+     "released_worst": 0.11,
+     "released_cvar": 0.046,
+     "released_mean": 0.011,
+     "benign_served": 0.34
+    },
+    "0.9": {
+     "released_worst": 0.02,
+     "released_cvar": 0.004,
+     "released_mean": 0.001,
+     "benign_served": 0.16
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.71,
+     "released_cvar": 0.622,
+     "released_mean": 0.221,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.71,
+     "released_cvar": 0.595,
+     "released_mean": 0.191,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.635,
+     "released_cvar": 0.534,
+     "released_mean": 0.157,
+     "benign_served": 0.54
+    },
+    "0.75": {
+     "released_worst": 0.605,
+     "released_cvar": 0.413,
+     "released_mean": 0.118,
+     "benign_served": 0.52
+    },
+    "0.8": {
+     "released_worst": 0.46,
+     "released_cvar": 0.219,
+     "released_mean": 0.059,
+     "benign_served": 0.46
+    },
+    "0.85": {
+     "released_worst": 0.095,
+     "released_cvar": 0.047,
+     "released_mean": 0.012,
+     "benign_served": 0.34
+    },
+    "0.9": {
+     "released_worst": 0.03,
+     "released_cvar": 0.006,
+     "released_mean": 0.002,
+     "benign_served": 0.16
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.8,
+     "released_cvar": 0.696,
+     "released_mean": 0.251,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.8,
+     "released_cvar": 0.692,
+     "released_mean": 0.22,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.76,
+     "released_cvar": 0.616,
+     "released_mean": 0.181,
+     "benign_served": 0.54
+    },
+    "0.75": {
+     "released_worst": 0.715,
+     "released_cvar": 0.467,
+     "released_mean": 0.134,
+     "benign_served": 0.52
+    },
+    "0.8": {
+     "released_worst": 0.54,
+     "released_cvar": 0.25,
+     "released_mean": 0.068,
+     "benign_served": 0.46
+    },
+    "0.85": {
+     "released_worst": 0.12,
+     "released_cvar": 0.056,
+     "released_mean": 0.014,
+     "benign_served": 0.34
+    },
+    "0.9": {
+     "released_worst": 0.03,
+     "released_cvar": 0.006,
+     "released_mean": 0.002,
+     "benign_served": 0.16
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   }
+  },
+  "Llama-2-7b+internlm-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.675,
+     "released_cvar": 0.482,
+     "released_mean": 0.138,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.67,
+     "released_cvar": 0.466,
+     "released_mean": 0.134,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.61,
+     "released_cvar": 0.355,
+     "released_mean": 0.098,
+     "benign_served": 0.5
+    },
+    "0.75": {
+     "released_worst": 0.52,
+     "released_cvar": 0.26,
+     "released_mean": 0.071,
+     "benign_served": 0.41
+    },
+    "0.8": {
+     "released_worst": 0.365,
+     "released_cvar": 0.164,
+     "released_mean": 0.041,
+     "benign_served": 0.35
+    },
+    "0.85": {
+     "released_worst": 0.225,
+     "released_cvar": 0.092,
+     "released_mean": 0.023,
+     "benign_served": 0.24
+    },
+    "0.9": {
+     "released_worst": 0.06,
+     "released_cvar": 0.02,
+     "released_mean": 0.005,
+     "benign_served": 0.12
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.71,
+     "released_cvar": 0.63,
+     "released_mean": 0.228,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.67,
+     "released_cvar": 0.578,
+     "released_mean": 0.205,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.635,
+     "released_cvar": 0.428,
+     "released_mean": 0.14,
+     "benign_served": 0.5
+    },
+    "0.75": {
+     "released_worst": 0.545,
+     "released_cvar": 0.347,
+     "released_mean": 0.103,
+     "benign_served": 0.41
+    },
+    "0.8": {
+     "released_worst": 0.39,
+     "released_cvar": 0.235,
+     "released_mean": 0.063,
+     "benign_served": 0.35
+    },
+    "0.85": {
+     "released_worst": 0.23,
+     "released_cvar": 0.118,
+     "released_mean": 0.03,
+     "benign_served": 0.24
+    },
+    "0.9": {
+     "released_worst": 0.055,
+     "released_cvar": 0.022,
+     "released_mean": 0.005,
+     "benign_served": 0.12
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.8,
+     "released_cvar": 0.698,
+     "released_mean": 0.259,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.76,
+     "released_cvar": 0.677,
+     "released_mean": 0.235,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.715,
+     "released_cvar": 0.497,
+     "released_mean": 0.162,
+     "benign_served": 0.5
+    },
+    "0.75": {
+     "released_worst": 0.62,
+     "released_cvar": 0.397,
+     "released_mean": 0.117,
+     "benign_served": 0.41
+    },
+    "0.8": {
+     "released_worst": 0.445,
+     "released_cvar": 0.26,
+     "released_mean": 0.07,
+     "benign_served": 0.35
+    },
+    "0.85": {
+     "released_worst": 0.26,
+     "released_cvar": 0.131,
+     "released_mean": 0.034,
+     "benign_served": 0.24
+    },
+    "0.9": {
+     "released_worst": 0.065,
+     "released_cvar": 0.025,
+     "released_mean": 0.006,
+     "benign_served": 0.12
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   }
+  },
+  "Llama-2-7b+vicuna-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.68,
+     "released_cvar": 0.483,
+     "released_mean": 0.138,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.68,
+     "released_cvar": 0.483,
+     "released_mean": 0.138,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.67,
+     "released_cvar": 0.462,
+     "released_mean": 0.132,
+     "benign_served": 0.56
+    },
+    "0.75": {
+     "released_worst": 0.615,
+     "released_cvar": 0.418,
+     "released_mean": 0.117,
+     "benign_served": 0.5
+    },
+    "0.8": {
+     "released_worst": 0.445,
+     "released_cvar": 0.28,
+     "released_mean": 0.076,
+     "benign_served": 0.47
+    },
+    "0.85": {
+     "released_worst": 0.265,
+     "released_cvar": 0.131,
+     "released_mean": 0.033,
+     "benign_served": 0.37
+    },
+    "0.9": {
+     "released_worst": 0.07,
+     "released_cvar": 0.025,
+     "released_mean": 0.006,
+     "benign_served": 0.18
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.03
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.71,
+     "released_cvar": 0.642,
+     "released_mean": 0.234,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.705,
+     "released_cvar": 0.594,
+     "released_mean": 0.198,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.7,
+     "released_cvar": 0.576,
+     "released_mean": 0.166,
+     "benign_served": 0.56
+    },
+    "0.75": {
+     "released_worst": 0.665,
+     "released_cvar": 0.53,
+     "released_mean": 0.148,
+     "benign_served": 0.5
+    },
+    "0.8": {
+     "released_worst": 0.475,
+     "released_cvar": 0.378,
+     "released_mean": 0.101,
+     "benign_served": 0.47
+    },
+    "0.85": {
+     "released_worst": 0.275,
+     "released_cvar": 0.166,
+     "released_mean": 0.042,
+     "benign_served": 0.37
+    },
+    "0.9": {
+     "released_worst": 0.065,
+     "released_cvar": 0.028,
+     "released_mean": 0.007,
+     "benign_served": 0.18
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.03
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.8,
+     "released_cvar": 0.711,
+     "released_mean": 0.264,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.795,
+     "released_cvar": 0.694,
+     "released_mean": 0.228,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.785,
+     "released_cvar": 0.673,
+     "released_mean": 0.195,
+     "benign_served": 0.56
+    },
+    "0.75": {
+     "released_worst": 0.73,
+     "released_cvar": 0.616,
+     "released_mean": 0.173,
+     "benign_served": 0.5
+    },
+    "0.8": {
+     "released_worst": 0.53,
+     "released_cvar": 0.427,
+     "released_mean": 0.116,
+     "benign_served": 0.47
+    },
+    "0.85": {
+     "released_worst": 0.31,
+     "released_cvar": 0.189,
+     "released_mean": 0.048,
+     "benign_served": 0.37
+    },
+    "0.9": {
+     "released_worst": 0.075,
+     "released_cvar": 0.032,
+     "released_mean": 0.008,
+     "benign_served": 0.18
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.03
+    }
+   }
+  },
+  "Mistral-7B-v0.1+Qwen-7B": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.965,
+     "released_cvar": 0.906,
+     "released_mean": 0.619,
+     "benign_served": 0.93
+    },
+    "0.6": {
+     "released_worst": 0.89,
+     "released_cvar": 0.82,
+     "released_mean": 0.539,
+     "benign_served": 0.91
+    },
+    "0.7": {
+     "released_worst": 0.81,
+     "released_cvar": 0.703,
+     "released_mean": 0.371,
+     "benign_served": 0.87
+    },
+    "0.75": {
+     "released_worst": 0.71,
+     "released_cvar": 0.614,
+     "released_mean": 0.275,
+     "benign_served": 0.84
+    },
+    "0.8": {
+     "released_worst": 0.55,
+     "released_cvar": 0.434,
+     "released_mean": 0.173,
+     "benign_served": 0.77
+    },
+    "0.85": {
+     "released_worst": 0.395,
+     "released_cvar": 0.247,
+     "released_mean": 0.078,
+     "benign_served": 0.64
+    },
+    "0.9": {
+     "released_worst": 0.22,
+     "released_cvar": 0.12,
+     "released_mean": 0.031,
+     "benign_served": 0.4
+    },
+    "0.95": {
+     "released_worst": 0.03,
+     "released_cvar": 0.013,
+     "released_mean": 0.003,
+     "benign_served": 0.08
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.97,
+     "released_cvar": 0.877,
+     "released_mean": 0.601,
+     "benign_served": 0.93
+    },
+    "0.6": {
+     "released_worst": 0.84,
+     "released_cvar": 0.793,
+     "released_mean": 0.506,
+     "benign_served": 0.91
+    },
+    "0.7": {
+     "released_worst": 0.785,
+     "released_cvar": 0.649,
+     "released_mean": 0.338,
+     "benign_served": 0.87
+    },
+    "0.75": {
+     "released_worst": 0.695,
+     "released_cvar": 0.568,
+     "released_mean": 0.25,
+     "benign_served": 0.84
+    },
+    "0.8": {
+     "released_worst": 0.495,
+     "released_cvar": 0.395,
+     "released_mean": 0.154,
+     "benign_served": 0.77
+    },
+    "0.85": {
+     "released_worst": 0.38,
+     "released_cvar": 0.235,
+     "released_mean": 0.073,
+     "benign_served": 0.64
+    },
+    "0.9": {
+     "released_worst": 0.205,
+     "released_cvar": 0.112,
+     "released_mean": 0.029,
+     "benign_served": 0.4
+    },
+    "0.95": {
+     "released_worst": 0.04,
+     "released_cvar": 0.015,
+     "released_mean": 0.004,
+     "benign_served": 0.08
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.985,
+     "released_cvar": 0.945,
+     "released_mean": 0.701,
+     "benign_served": 0.93
+    },
+    "0.6": {
+     "released_worst": 0.92,
+     "released_cvar": 0.858,
+     "released_mean": 0.597,
+     "benign_served": 0.91
+    },
+    "0.7": {
+     "released_worst": 0.88,
+     "released_cvar": 0.757,
+     "released_mean": 0.404,
+     "benign_served": 0.87
+    },
+    "0.75": {
+     "released_worst": 0.77,
+     "released_cvar": 0.662,
+     "released_mean": 0.299,
+     "benign_served": 0.84
+    },
+    "0.8": {
+     "released_worst": 0.62,
+     "released_cvar": 0.469,
+     "released_mean": 0.187,
+     "benign_served": 0.77
+    },
+    "0.85": {
+     "released_worst": 0.445,
+     "released_cvar": 0.262,
+     "released_mean": 0.084,
+     "benign_served": 0.64
+    },
+    "0.9": {
+     "released_worst": 0.23,
+     "released_cvar": 0.125,
+     "released_mean": 0.032,
+     "benign_served": 0.4
+    },
+    "0.95": {
+     "released_worst": 0.04,
+     "released_cvar": 0.015,
+     "released_mean": 0.004,
+     "benign_served": 0.08
+    }
+   }
+  },
+  "Mistral-7B-v0.1+internlm-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.975,
+     "released_cvar": 0.92,
+     "released_mean": 0.624,
+     "benign_served": 0.93
+    },
+    "0.6": {
+     "released_worst": 0.965,
+     "released_cvar": 0.894,
+     "released_mean": 0.546,
+     "benign_served": 0.9
+    },
+    "0.7": {
+     "released_worst": 0.94,
+     "released_cvar": 0.85,
+     "released_mean": 0.426,
+     "benign_served": 0.82
+    },
+    "0.75": {
+     "released_worst": 0.92,
+     "released_cvar": 0.808,
+     "released_mean": 0.352,
+     "benign_served": 0.74
+    },
+    "0.8": {
+     "released_worst": 0.885,
+     "released_cvar": 0.734,
+     "released_mean": 0.251,
+     "benign_served": 0.63
+    },
+    "0.85": {
+     "released_worst": 0.765,
+     "released_cvar": 0.526,
+     "released_mean": 0.149,
+     "benign_served": 0.46
+    },
+    "0.9": {
+     "released_worst": 0.56,
+     "released_cvar": 0.296,
+     "released_mean": 0.076,
+     "benign_served": 0.26
+    },
+    "0.95": {
+     "released_worst": 0.135,
+     "released_cvar": 0.063,
+     "released_mean": 0.016,
+     "benign_served": 0.02
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.985,
+     "released_cvar": 0.881,
+     "released_mean": 0.603,
+     "benign_served": 0.93
+    },
+    "0.6": {
+     "released_worst": 0.955,
+     "released_cvar": 0.861,
+     "released_mean": 0.514,
+     "benign_served": 0.9
+    },
+    "0.7": {
+     "released_worst": 0.93,
+     "released_cvar": 0.819,
+     "released_mean": 0.395,
+     "benign_served": 0.82
+    },
+    "0.75": {
+     "released_worst": 0.925,
+     "released_cvar": 0.788,
+     "released_mean": 0.325,
+     "benign_served": 0.74
+    },
+    "0.8": {
+     "released_worst": 0.9,
+     "released_cvar": 0.708,
+     "released_mean": 0.236,
+     "benign_served": 0.63
+    },
+    "0.85": {
+     "released_worst": 0.77,
+     "released_cvar": 0.512,
+     "released_mean": 0.143,
+     "benign_served": 0.46
+    },
+    "0.9": {
+     "released_worst": 0.57,
+     "released_cvar": 0.29,
+     "released_mean": 0.075,
+     "benign_served": 0.26
+    },
+    "0.95": {
+     "released_worst": 0.14,
+     "released_cvar": 0.066,
+     "released_mean": 0.017,
+     "benign_served": 0.02
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 1.0,
+     "released_cvar": 0.962,
+     "released_mean": 0.706,
+     "benign_served": 0.93
+    },
+    "0.6": {
+     "released_worst": 0.99,
+     "released_cvar": 0.942,
+     "released_mean": 0.609,
+     "benign_served": 0.9
+    },
+    "0.7": {
+     "released_worst": 0.99,
+     "released_cvar": 0.899,
+     "released_mean": 0.47,
+     "benign_served": 0.82
+    },
+    "0.75": {
+     "released_worst": 0.97,
+     "released_cvar": 0.868,
+     "released_mean": 0.386,
+     "benign_served": 0.74
+    },
+    "0.8": {
+     "released_worst": 0.915,
+     "released_cvar": 0.781,
+     "released_mean": 0.272,
+     "benign_served": 0.63
+    },
+    "0.85": {
+     "released_worst": 0.78,
+     "released_cvar": 0.56,
+     "released_mean": 0.161,
+     "benign_served": 0.46
+    },
+    "0.9": {
+     "released_worst": 0.58,
+     "released_cvar": 0.314,
+     "released_mean": 0.082,
+     "benign_served": 0.26
+    },
+    "0.95": {
+     "released_worst": 0.145,
+     "released_cvar": 0.07,
+     "released_mean": 0.017,
+     "benign_served": 0.02
+    }
+   }
+  },
+  "Mistral-7B-v0.1+vicuna-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.97,
+     "released_cvar": 0.925,
+     "released_mean": 0.639,
+     "benign_served": 0.97
+    },
+    "0.6": {
+     "released_worst": 0.97,
+     "released_cvar": 0.877,
+     "released_mean": 0.6,
+     "benign_served": 0.96
+    },
+    "0.7": {
+     "released_worst": 0.96,
+     "released_cvar": 0.818,
+     "released_mean": 0.498,
+     "benign_served": 0.95
+    },
+    "0.75": {
+     "released_worst": 0.94,
+     "released_cvar": 0.731,
+     "released_mean": 0.408,
+     "benign_served": 0.92
+    },
+    "0.8": {
+     "released_worst": 0.84,
+     "released_cvar": 0.604,
+     "released_mean": 0.291,
+     "benign_served": 0.85
+    },
+    "0.85": {
+     "released_worst": 0.66,
+     "released_cvar": 0.45,
+     "released_mean": 0.168,
+     "benign_served": 0.69
+    },
+    "0.9": {
+     "released_worst": 0.335,
+     "released_cvar": 0.216,
+     "released_mean": 0.072,
+     "benign_served": 0.46
+    },
+    "0.95": {
+     "released_worst": 0.04,
+     "released_cvar": 0.023,
+     "released_mean": 0.007,
+     "benign_served": 0.13
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.965,
+     "released_cvar": 0.89,
+     "released_mean": 0.621,
+     "benign_served": 0.97
+    },
+    "0.6": {
+     "released_worst": 0.91,
+     "released_cvar": 0.841,
+     "released_mean": 0.562,
+     "benign_served": 0.96
+    },
+    "0.7": {
+     "released_worst": 0.9,
+     "released_cvar": 0.769,
+     "released_mean": 0.456,
+     "benign_served": 0.95
+    },
+    "0.75": {
+     "released_worst": 0.89,
+     "released_cvar": 0.695,
+     "released_mean": 0.368,
+     "benign_served": 0.92
+    },
+    "0.8": {
+     "released_worst": 0.82,
+     "released_cvar": 0.569,
+     "released_mean": 0.263,
+     "benign_served": 0.85
+    },
+    "0.85": {
+     "released_worst": 0.63,
+     "released_cvar": 0.41,
+     "released_mean": 0.152,
+     "benign_served": 0.69
+    },
+    "0.9": {
+     "released_worst": 0.345,
+     "released_cvar": 0.192,
+     "released_mean": 0.064,
+     "benign_served": 0.46
+    },
+    "0.95": {
+     "released_worst": 0.04,
+     "released_cvar": 0.021,
+     "released_mean": 0.006,
+     "benign_served": 0.13
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.99,
+     "released_cvar": 0.961,
+     "released_mean": 0.725,
+     "benign_served": 0.97
+    },
+    "0.6": {
+     "released_worst": 0.985,
+     "released_cvar": 0.924,
+     "released_mean": 0.663,
+     "benign_served": 0.96
+    },
+    "0.7": {
+     "released_worst": 0.975,
+     "released_cvar": 0.874,
+     "released_mean": 0.544,
+     "benign_served": 0.95
+    },
+    "0.75": {
+     "released_worst": 0.965,
+     "released_cvar": 0.776,
+     "released_mean": 0.443,
+     "benign_served": 0.92
+    },
+    "0.8": {
+     "released_worst": 0.89,
+     "released_cvar": 0.647,
+     "released_mean": 0.315,
+     "benign_served": 0.85
+    },
+    "0.85": {
+     "released_worst": 0.67,
+     "released_cvar": 0.484,
+     "released_mean": 0.181,
+     "benign_served": 0.69
+    },
+    "0.9": {
+     "released_worst": 0.345,
+     "released_cvar": 0.232,
+     "released_mean": 0.076,
+     "benign_served": 0.46
+    },
+    "0.95": {
+     "released_worst": 0.04,
+     "released_cvar": 0.028,
+     "released_mean": 0.008,
+     "benign_served": 0.13
+    }
+   }
+  },
+  "Qwen-7B+internlm-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.775,
+     "released_cvar": 0.629,
+     "released_mean": 0.2,
+     "benign_served": 0.76
+    },
+    "0.6": {
+     "released_worst": 0.77,
+     "released_cvar": 0.623,
+     "released_mean": 0.198,
+     "benign_served": 0.76
+    },
+    "0.7": {
+     "released_worst": 0.755,
+     "released_cvar": 0.588,
+     "released_mean": 0.184,
+     "benign_served": 0.72
+    },
+    "0.75": {
+     "released_worst": 0.675,
+     "released_cvar": 0.502,
+     "released_mean": 0.154,
+     "benign_served": 0.63
+    },
+    "0.8": {
+     "released_worst": 0.475,
+     "released_cvar": 0.361,
+     "released_mean": 0.11,
+     "benign_served": 0.55
+    },
+    "0.85": {
+     "released_worst": 0.34,
+     "released_cvar": 0.198,
+     "released_mean": 0.057,
+     "benign_served": 0.47
+    },
+    "0.9": {
+     "released_worst": 0.265,
+     "released_cvar": 0.122,
+     "released_mean": 0.031,
+     "benign_served": 0.26
+    },
+    "0.95": {
+     "released_worst": 0.075,
+     "released_cvar": 0.031,
+     "released_mean": 0.008,
+     "benign_served": 0.04
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.84,
+     "released_cvar": 0.753,
+     "released_mean": 0.315,
+     "benign_served": 0.76
+    },
+    "0.6": {
+     "released_worst": 0.84,
+     "released_cvar": 0.739,
+     "released_mean": 0.295,
+     "benign_served": 0.76
+    },
+    "0.7": {
+     "released_worst": 0.72,
+     "released_cvar": 0.654,
+     "released_mean": 0.258,
+     "benign_served": 0.72
+    },
+    "0.75": {
+     "released_worst": 0.625,
+     "released_cvar": 0.502,
+     "released_mean": 0.196,
+     "benign_served": 0.63
+    },
+    "0.8": {
+     "released_worst": 0.42,
+     "released_cvar": 0.364,
+     "released_mean": 0.124,
+     "benign_served": 0.55
+    },
+    "0.85": {
+     "released_worst": 0.31,
+     "released_cvar": 0.186,
+     "released_mean": 0.058,
+     "benign_served": 0.47
+    },
+    "0.9": {
+     "released_worst": 0.27,
+     "released_cvar": 0.121,
+     "released_mean": 0.031,
+     "benign_served": 0.26
+    },
+    "0.95": {
+     "released_worst": 0.075,
+     "released_cvar": 0.031,
+     "released_mean": 0.008,
+     "benign_served": 0.04
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.89,
+     "released_cvar": 0.807,
+     "released_mean": 0.344,
+     "benign_served": 0.76
+    },
+    "0.6": {
+     "released_worst": 0.875,
+     "released_cvar": 0.801,
+     "released_mean": 0.324,
+     "benign_served": 0.76
+    },
+    "0.7": {
+     "released_worst": 0.805,
+     "released_cvar": 0.724,
+     "released_mean": 0.285,
+     "benign_served": 0.72
+    },
+    "0.75": {
+     "released_worst": 0.695,
+     "released_cvar": 0.565,
+     "released_mean": 0.217,
+     "benign_served": 0.63
+    },
+    "0.8": {
+     "released_worst": 0.525,
+     "released_cvar": 0.407,
+     "released_mean": 0.137,
+     "benign_served": 0.55
+    },
+    "0.85": {
+     "released_worst": 0.37,
+     "released_cvar": 0.209,
+     "released_mean": 0.064,
+     "benign_served": 0.47
+    },
+    "0.9": {
+     "released_worst": 0.27,
+     "released_cvar": 0.131,
+     "released_mean": 0.033,
+     "benign_served": 0.26
+    },
+    "0.95": {
+     "released_worst": 0.085,
+     "released_cvar": 0.033,
+     "released_mean": 0.008,
+     "benign_served": 0.04
+    }
+   }
+  },
+  "Qwen-7B+vicuna-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.78,
+     "released_cvar": 0.629,
+     "released_mean": 0.2,
+     "benign_served": 0.77
+    },
+    "0.6": {
+     "released_worst": 0.78,
+     "released_cvar": 0.621,
+     "released_mean": 0.198,
+     "benign_served": 0.77
+    },
+    "0.7": {
+     "released_worst": 0.765,
+     "released_cvar": 0.572,
+     "released_mean": 0.184,
+     "benign_served": 0.76
+    },
+    "0.75": {
+     "released_worst": 0.735,
+     "released_cvar": 0.505,
+     "released_mean": 0.163,
+     "benign_served": 0.73
+    },
+    "0.8": {
+     "released_worst": 0.565,
+     "released_cvar": 0.335,
+     "released_mean": 0.114,
+     "benign_served": 0.68
+    },
+    "0.85": {
+     "released_worst": 0.285,
+     "released_cvar": 0.185,
+     "released_mean": 0.06,
+     "benign_served": 0.64
+    },
+    "0.9": {
+     "released_worst": 0.165,
+     "released_cvar": 0.068,
+     "released_mean": 0.018,
+     "benign_served": 0.43
+    },
+    "0.95": {
+     "released_worst": 0.005,
+     "released_cvar": 0.003,
+     "released_mean": 0.001,
+     "benign_served": 0.12
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.84,
+     "released_cvar": 0.754,
+     "released_mean": 0.312,
+     "benign_served": 0.77
+    },
+    "0.6": {
+     "released_worst": 0.825,
+     "released_cvar": 0.748,
+     "released_mean": 0.292,
+     "benign_served": 0.77
+    },
+    "0.7": {
+     "released_worst": 0.795,
+     "released_cvar": 0.72,
+     "released_mean": 0.262,
+     "benign_served": 0.76
+    },
+    "0.75": {
+     "released_worst": 0.75,
+     "released_cvar": 0.667,
+     "released_mean": 0.234,
+     "benign_served": 0.73
+    },
+    "0.8": {
+     "released_worst": 0.595,
+     "released_cvar": 0.486,
+     "released_mean": 0.167,
+     "benign_served": 0.68
+    },
+    "0.85": {
+     "released_worst": 0.285,
+     "released_cvar": 0.225,
+     "released_mean": 0.075,
+     "benign_served": 0.64
+    },
+    "0.9": {
+     "released_worst": 0.16,
+     "released_cvar": 0.067,
+     "released_mean": 0.017,
+     "benign_served": 0.43
+    },
+    "0.95": {
+     "released_worst": 0.005,
+     "released_cvar": 0.002,
+     "released_mean": 0.001,
+     "benign_served": 0.12
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.895,
+     "released_cvar": 0.808,
+     "released_mean": 0.342,
+     "benign_served": 0.77
+    },
+    "0.6": {
+     "released_worst": 0.895,
+     "released_cvar": 0.8,
+     "released_mean": 0.321,
+     "benign_served": 0.77
+    },
+    "0.7": {
+     "released_worst": 0.88,
+     "released_cvar": 0.77,
+     "released_mean": 0.287,
+     "benign_served": 0.76
+    },
+    "0.75": {
+     "released_worst": 0.845,
+     "released_cvar": 0.707,
+     "released_mean": 0.254,
+     "benign_served": 0.73
+    },
+    "0.8": {
+     "released_worst": 0.665,
+     "released_cvar": 0.51,
+     "released_mean": 0.181,
+     "benign_served": 0.68
+    },
+    "0.85": {
+     "released_worst": 0.32,
+     "released_cvar": 0.237,
+     "released_mean": 0.082,
+     "benign_served": 0.64
+    },
+    "0.9": {
+     "released_worst": 0.165,
+     "released_cvar": 0.069,
+     "released_mean": 0.019,
+     "benign_served": 0.43
+    },
+    "0.95": {
+     "released_worst": 0.005,
+     "released_cvar": 0.003,
+     "released_mean": 0.001,
+     "benign_served": 0.12
+    }
+   }
+  },
+  "internlm-7b+vicuna-7b": {
+   "guard": {
+    "0.5": {
+     "released_worst": 0.94,
+     "released_cvar": 0.892,
+     "released_mean": 0.325,
+     "benign_served": 0.58
+    },
+    "0.6": {
+     "released_worst": 0.94,
+     "released_cvar": 0.856,
+     "released_mean": 0.314,
+     "benign_served": 0.58
+    },
+    "0.7": {
+     "released_worst": 0.915,
+     "released_cvar": 0.736,
+     "released_mean": 0.265,
+     "benign_served": 0.55
+    },
+    "0.75": {
+     "released_worst": 0.895,
+     "released_cvar": 0.645,
+     "released_mean": 0.22,
+     "benign_served": 0.52
+    },
+    "0.8": {
+     "released_worst": 0.825,
+     "released_cvar": 0.527,
+     "released_mean": 0.162,
+     "benign_served": 0.47
+    },
+    "0.85": {
+     "released_worst": 0.67,
+     "released_cvar": 0.382,
+     "released_mean": 0.104,
+     "benign_served": 0.38
+    },
+    "0.9": {
+     "released_worst": 0.265,
+     "released_cvar": 0.164,
+     "released_mean": 0.043,
+     "benign_served": 0.22
+    },
+    "0.95": {
+     "released_worst": 0.015,
+     "released_cvar": 0.007,
+     "released_mean": 0.002,
+     "benign_served": 0.03
+    }
+   },
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.875,
+     "released_cvar": 0.806,
+     "released_mean": 0.427,
+     "benign_served": 0.58
+    },
+    "0.6": {
+     "released_worst": 0.875,
+     "released_cvar": 0.779,
+     "released_mean": 0.391,
+     "benign_served": 0.58
+    },
+    "0.7": {
+     "released_worst": 0.855,
+     "released_cvar": 0.715,
+     "released_mean": 0.316,
+     "benign_served": 0.55
+    },
+    "0.75": {
+     "released_worst": 0.82,
+     "released_cvar": 0.646,
+     "released_mean": 0.259,
+     "benign_served": 0.52
+    },
+    "0.8": {
+     "released_worst": 0.7,
+     "released_cvar": 0.531,
+     "released_mean": 0.18,
+     "benign_served": 0.47
+    },
+    "0.85": {
+     "released_worst": 0.55,
+     "released_cvar": 0.373,
+     "released_mean": 0.106,
+     "benign_served": 0.38
+    },
+    "0.9": {
+     "released_worst": 0.26,
+     "released_cvar": 0.152,
+     "released_mean": 0.041,
+     "benign_served": 0.22
+    },
+    "0.95": {
+     "released_worst": 0.015,
+     "released_cvar": 0.006,
+     "released_mean": 0.002,
+     "benign_served": 0.03
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.98,
+     "released_cvar": 0.935,
+     "released_mean": 0.499,
+     "benign_served": 0.58
+    },
+    "0.6": {
+     "released_worst": 0.965,
+     "released_cvar": 0.915,
+     "released_mean": 0.461,
+     "benign_served": 0.58
+    },
+    "0.7": {
+     "released_worst": 0.955,
+     "released_cvar": 0.831,
+     "released_mean": 0.372,
+     "benign_served": 0.55
+    },
+    "0.75": {
+     "released_worst": 0.945,
+     "released_cvar": 0.734,
+     "released_mean": 0.299,
+     "benign_served": 0.52
+    },
+    "0.8": {
+     "released_worst": 0.865,
+     "released_cvar": 0.612,
+     "released_mean": 0.208,
+     "benign_served": 0.47
+    },
+    "0.85": {
+     "released_worst": 0.695,
+     "released_cvar": 0.426,
+     "released_mean": 0.123,
+     "benign_served": 0.38
+    },
+    "0.9": {
+     "released_worst": 0.27,
+     "released_cvar": 0.171,
+     "released_mean": 0.046,
+     "benign_served": 0.22
+    },
+    "0.95": {
+     "released_worst": 0.015,
+     "released_cvar": 0.007,
+     "released_mean": 0.002,
+     "benign_served": 0.03
+    }
+   }
+  }
+ },
+ "single": {
+  "Baichuan2-7b": {
+   "guard": {
+    "released_worst": 0.95,
+    "released_cvar": 0.875,
+    "released_mean": 0.329,
+    "benign_served": 0.99
+   },
+   "qwen3": {
+    "released_worst": 0.92,
+    "released_cvar": 0.831,
+    "released_mean": 0.436,
+    "benign_served": 0.99
+   },
+   "either": {
+    "released_worst": 0.965,
+    "released_cvar": 0.913,
+    "released_mean": 0.5,
+    "benign_served": 0.99
+   }
+  },
+  "Llama-2-7b": {
+   "guard": {
+    "released_worst": 0.68,
+    "released_cvar": 0.483,
+    "released_mean": 0.138,
+    "benign_served": 0.62
+   },
+   "qwen3": {
+    "released_worst": 0.71,
+    "released_cvar": 0.662,
+    "released_mean": 0.247,
+    "benign_served": 0.62
+   },
+   "either": {
+    "released_worst": 0.8,
+    "released_cvar": 0.731,
+    "released_mean": 0.277,
+    "benign_served": 0.62
+   }
+  },
+  "Mistral-7B-v0.1": {
+   "guard": {
+    "released_worst": 0.975,
+    "released_cvar": 0.931,
+    "released_mean": 0.651,
+    "benign_served": 1.0
+   },
+   "qwen3": {
+    "released_worst": 0.985,
+    "released_cvar": 0.9,
+    "released_mean": 0.65,
+    "benign_served": 1.0
+   },
+   "either": {
+    "released_worst": 1.0,
+    "released_cvar": 0.966,
+    "released_mean": 0.754,
+    "benign_served": 1.0
+   }
+  },
+  "Qwen-7B": {
+   "guard": {
+    "released_worst": 0.78,
+    "released_cvar": 0.63,
+    "released_mean": 0.201,
+    "benign_served": 0.77
+   },
+   "qwen3": {
+    "released_worst": 0.84,
+    "released_cvar": 0.754,
+    "released_mean": 0.328,
+    "benign_served": 0.77
+   },
+   "either": {
+    "released_worst": 0.895,
+    "released_cvar": 0.808,
+    "released_mean": 0.357,
+    "benign_served": 0.77
+   }
+  },
+  "internlm-7b": {
+   "guard": {
+    "released_worst": 0.945,
+    "released_cvar": 0.896,
+    "released_mean": 0.327,
+    "benign_served": 0.58
+   },
+   "qwen3": {
+    "released_worst": 0.88,
+    "released_cvar": 0.814,
+    "released_mean": 0.438,
+    "benign_served": 0.58
+   },
+   "either": {
+    "released_worst": 0.98,
+    "released_cvar": 0.941,
+    "released_mean": 0.51,
+    "benign_served": 0.58
+   }
+  },
+  "vicuna-7b": {
+   "guard": {
+    "released_worst": 0.925,
+    "released_cvar": 0.829,
+    "released_mean": 0.369,
+    "benign_served": 0.88
+   },
+   "qwen3": {
+    "released_worst": 0.845,
+    "released_cvar": 0.772,
+    "released_mean": 0.405,
+    "benign_served": 0.88
+   },
+   "either": {
+    "released_worst": 0.965,
+    "released_cvar": 0.899,
+    "released_mean": 0.502,
+    "benign_served": 0.88
+   }
+  }
+ },
+ "single_guard": {
+  "Baichuan2-7b": {
+   "qwen3": {
+    "released_worst": 0.72,
+    "released_cvar": 0.509,
+    "released_mean": 0.171,
+    "benign_served": 0.91
+   },
+   "either": {
+    "released_worst": 0.72,
+    "released_cvar": 0.509,
+    "released_mean": 0.171,
+    "benign_served": 0.91
+   }
+  },
+  "Llama-2-7b": {
+   "qwen3": {
+    "released_worst": 0.695,
+    "released_cvar": 0.473,
+    "released_mean": 0.139,
+    "benign_served": 0.62
+   },
+   "either": {
+    "released_worst": 0.695,
+    "released_cvar": 0.473,
+    "released_mean": 0.139,
+    "benign_served": 0.62
+   }
+  },
+  "Mistral-7B-v0.1": {
+   "qwen3": {
+    "released_worst": 0.385,
+    "released_cvar": 0.263,
+    "released_mean": 0.104,
+    "benign_served": 0.93
+   },
+   "either": {
+    "released_worst": 0.385,
+    "released_cvar": 0.263,
+    "released_mean": 0.104,
+    "benign_served": 0.93
+   }
+  },
+  "Qwen-7B": {
+   "qwen3": {
+    "released_worst": 0.7,
+    "released_cvar": 0.524,
+    "released_mean": 0.157,
+    "benign_served": 0.74
+   },
+   "either": {
+    "released_worst": 0.7,
+    "released_cvar": 0.524,
+    "released_mean": 0.157,
+    "benign_served": 0.74
+   }
+  },
+  "internlm-7b": {
+   "qwen3": {
+    "released_worst": 0.74,
+    "released_cvar": 0.569,
+    "released_mean": 0.183,
+    "benign_served": 0.55
+   },
+   "either": {
+    "released_worst": 0.74,
+    "released_cvar": 0.569,
+    "released_mean": 0.183,
+    "benign_served": 0.55
+   }
+  },
+  "vicuna-7b": {
+   "qwen3": {
+    "released_worst": 0.485,
+    "released_cvar": 0.374,
+    "released_mean": 0.132,
+    "benign_served": 0.83
+   },
+   "either": {
+    "released_worst": 0.485,
+    "released_cvar": 0.374,
+    "released_mean": 0.132,
+    "benign_served": 0.83
+   }
+  }
+ },
+ "committees_guard": {
+  "Baichuan2-7b+Llama-2-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.72,
+     "released_cvar": 0.478,
+     "released_mean": 0.156,
+     "benign_served": 0.9
+    },
+    "0.6": {
+     "released_worst": 0.72,
+     "released_cvar": 0.45,
+     "released_mean": 0.139,
+     "benign_served": 0.82
+    },
+    "0.7": {
+     "released_worst": 0.665,
+     "released_cvar": 0.329,
+     "released_mean": 0.092,
+     "benign_served": 0.75
+    },
+    "0.75": {
+     "released_worst": 0.555,
+     "released_cvar": 0.213,
+     "released_mean": 0.059,
+     "benign_served": 0.69
+    },
+    "0.8": {
+     "released_worst": 0.34,
+     "released_cvar": 0.112,
+     "released_mean": 0.03,
+     "benign_served": 0.61
+    },
+    "0.85": {
+     "released_worst": 0.045,
+     "released_cvar": 0.016,
+     "released_mean": 0.005,
+     "benign_served": 0.41
+    },
+    "0.9": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.14
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.72,
+     "released_cvar": 0.478,
+     "released_mean": 0.156,
+     "benign_served": 0.9
+    },
+    "0.6": {
+     "released_worst": 0.72,
+     "released_cvar": 0.45,
+     "released_mean": 0.139,
+     "benign_served": 0.82
+    },
+    "0.7": {
+     "released_worst": 0.665,
+     "released_cvar": 0.329,
+     "released_mean": 0.092,
+     "benign_served": 0.75
+    },
+    "0.75": {
+     "released_worst": 0.555,
+     "released_cvar": 0.213,
+     "released_mean": 0.059,
+     "benign_served": 0.69
+    },
+    "0.8": {
+     "released_worst": 0.34,
+     "released_cvar": 0.112,
+     "released_mean": 0.03,
+     "benign_served": 0.61
+    },
+    "0.85": {
+     "released_worst": 0.045,
+     "released_cvar": 0.016,
+     "released_mean": 0.005,
+     "benign_served": 0.41
+    },
+    "0.9": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.14
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   }
+  },
+  "Baichuan2-7b+Mistral-7B-v0.1": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.71,
+     "released_cvar": 0.457,
+     "released_mean": 0.149,
+     "benign_served": 0.91
+    },
+    "0.6": {
+     "released_worst": 0.59,
+     "released_cvar": 0.352,
+     "released_mean": 0.111,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.2,
+     "released_cvar": 0.137,
+     "released_mean": 0.047,
+     "benign_served": 0.84
+    },
+    "0.75": {
+     "released_worst": 0.115,
+     "released_cvar": 0.075,
+     "released_mean": 0.027,
+     "benign_served": 0.77
+    },
+    "0.8": {
+     "released_worst": 0.085,
+     "released_cvar": 0.044,
+     "released_mean": 0.016,
+     "benign_served": 0.57
+    },
+    "0.85": {
+     "released_worst": 0.06,
+     "released_cvar": 0.025,
+     "released_mean": 0.007,
+     "benign_served": 0.48
+    },
+    "0.9": {
+     "released_worst": 0.03,
+     "released_cvar": 0.009,
+     "released_mean": 0.002,
+     "benign_served": 0.22
+    },
+    "0.95": {
+     "released_worst": 0.005,
+     "released_cvar": 0.001,
+     "released_mean": 0.0,
+     "benign_served": 0.03
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.71,
+     "released_cvar": 0.457,
+     "released_mean": 0.149,
+     "benign_served": 0.91
+    },
+    "0.6": {
+     "released_worst": 0.59,
+     "released_cvar": 0.352,
+     "released_mean": 0.111,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.2,
+     "released_cvar": 0.137,
+     "released_mean": 0.047,
+     "benign_served": 0.84
+    },
+    "0.75": {
+     "released_worst": 0.115,
+     "released_cvar": 0.075,
+     "released_mean": 0.027,
+     "benign_served": 0.77
+    },
+    "0.8": {
+     "released_worst": 0.085,
+     "released_cvar": 0.044,
+     "released_mean": 0.016,
+     "benign_served": 0.57
+    },
+    "0.85": {
+     "released_worst": 0.06,
+     "released_cvar": 0.025,
+     "released_mean": 0.007,
+     "benign_served": 0.48
+    },
+    "0.9": {
+     "released_worst": 0.03,
+     "released_cvar": 0.009,
+     "released_mean": 0.002,
+     "benign_served": 0.22
+    },
+    "0.95": {
+     "released_worst": 0.005,
+     "released_cvar": 0.001,
+     "released_mean": 0.0,
+     "benign_served": 0.03
+    }
+   }
+  },
+  "Baichuan2-7b+Qwen-7B": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.72,
+     "released_cvar": 0.476,
+     "released_mean": 0.157,
+     "benign_served": 0.88
+    },
+    "0.6": {
+     "released_worst": 0.715,
+     "released_cvar": 0.445,
+     "released_mean": 0.137,
+     "benign_served": 0.86
+    },
+    "0.7": {
+     "released_worst": 0.69,
+     "released_cvar": 0.412,
+     "released_mean": 0.115,
+     "benign_served": 0.83
+    },
+    "0.75": {
+     "released_worst": 0.565,
+     "released_cvar": 0.344,
+     "released_mean": 0.093,
+     "benign_served": 0.75
+    },
+    "0.8": {
+     "released_worst": 0.215,
+     "released_cvar": 0.149,
+     "released_mean": 0.039,
+     "benign_served": 0.61
+    },
+    "0.85": {
+     "released_worst": 0.03,
+     "released_cvar": 0.024,
+     "released_mean": 0.007,
+     "benign_served": 0.47
+    },
+    "0.9": {
+     "released_worst": 0.02,
+     "released_cvar": 0.008,
+     "released_mean": 0.002,
+     "benign_served": 0.22
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.72,
+     "released_cvar": 0.476,
+     "released_mean": 0.157,
+     "benign_served": 0.88
+    },
+    "0.6": {
+     "released_worst": 0.715,
+     "released_cvar": 0.445,
+     "released_mean": 0.137,
+     "benign_served": 0.86
+    },
+    "0.7": {
+     "released_worst": 0.69,
+     "released_cvar": 0.412,
+     "released_mean": 0.115,
+     "benign_served": 0.83
+    },
+    "0.75": {
+     "released_worst": 0.565,
+     "released_cvar": 0.344,
+     "released_mean": 0.093,
+     "benign_served": 0.75
+    },
+    "0.8": {
+     "released_worst": 0.215,
+     "released_cvar": 0.149,
+     "released_mean": 0.039,
+     "benign_served": 0.61
+    },
+    "0.85": {
+     "released_worst": 0.03,
+     "released_cvar": 0.024,
+     "released_mean": 0.007,
+     "benign_served": 0.47
+    },
+    "0.9": {
+     "released_worst": 0.02,
+     "released_cvar": 0.008,
+     "released_mean": 0.002,
+     "benign_served": 0.22
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   }
+  },
+  "Baichuan2-7b+internlm-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.72,
+     "released_cvar": 0.469,
+     "released_mean": 0.157,
+     "benign_served": 0.88
+    },
+    "0.6": {
+     "released_worst": 0.715,
+     "released_cvar": 0.442,
+     "released_mean": 0.142,
+     "benign_served": 0.83
+    },
+    "0.7": {
+     "released_worst": 0.66,
+     "released_cvar": 0.313,
+     "released_mean": 0.093,
+     "benign_served": 0.74
+    },
+    "0.75": {
+     "released_worst": 0.515,
+     "released_cvar": 0.21,
+     "released_mean": 0.062,
+     "benign_served": 0.64
+    },
+    "0.8": {
+     "released_worst": 0.25,
+     "released_cvar": 0.096,
+     "released_mean": 0.028,
+     "benign_served": 0.53
+    },
+    "0.85": {
+     "released_worst": 0.065,
+     "released_cvar": 0.029,
+     "released_mean": 0.009,
+     "benign_served": 0.42
+    },
+    "0.9": {
+     "released_worst": 0.01,
+     "released_cvar": 0.004,
+     "released_mean": 0.001,
+     "benign_served": 0.18
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.72,
+     "released_cvar": 0.469,
+     "released_mean": 0.157,
+     "benign_served": 0.88
+    },
+    "0.6": {
+     "released_worst": 0.715,
+     "released_cvar": 0.442,
+     "released_mean": 0.142,
+     "benign_served": 0.83
+    },
+    "0.7": {
+     "released_worst": 0.66,
+     "released_cvar": 0.313,
+     "released_mean": 0.093,
+     "benign_served": 0.74
+    },
+    "0.75": {
+     "released_worst": 0.515,
+     "released_cvar": 0.21,
+     "released_mean": 0.062,
+     "benign_served": 0.64
+    },
+    "0.8": {
+     "released_worst": 0.25,
+     "released_cvar": 0.096,
+     "released_mean": 0.028,
+     "benign_served": 0.53
+    },
+    "0.85": {
+     "released_worst": 0.065,
+     "released_cvar": 0.029,
+     "released_mean": 0.009,
+     "benign_served": 0.42
+    },
+    "0.9": {
+     "released_worst": 0.01,
+     "released_cvar": 0.004,
+     "released_mean": 0.001,
+     "benign_served": 0.18
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   }
+  },
+  "Baichuan2-7b+vicuna-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.72,
+     "released_cvar": 0.474,
+     "released_mean": 0.156,
+     "benign_served": 0.89
+    },
+    "0.6": {
+     "released_worst": 0.71,
+     "released_cvar": 0.444,
+     "released_mean": 0.141,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.645,
+     "released_cvar": 0.39,
+     "released_mean": 0.114,
+     "benign_served": 0.83
+    },
+    "0.75": {
+     "released_worst": 0.52,
+     "released_cvar": 0.321,
+     "released_mean": 0.091,
+     "benign_served": 0.72
+    },
+    "0.8": {
+     "released_worst": 0.38,
+     "released_cvar": 0.184,
+     "released_mean": 0.052,
+     "benign_served": 0.6
+    },
+    "0.85": {
+     "released_worst": 0.17,
+     "released_cvar": 0.051,
+     "released_mean": 0.015,
+     "benign_served": 0.46
+    },
+    "0.9": {
+     "released_worst": 0.01,
+     "released_cvar": 0.005,
+     "released_mean": 0.001,
+     "benign_served": 0.25
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.02
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.72,
+     "released_cvar": 0.474,
+     "released_mean": 0.156,
+     "benign_served": 0.89
+    },
+    "0.6": {
+     "released_worst": 0.71,
+     "released_cvar": 0.444,
+     "released_mean": 0.141,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.645,
+     "released_cvar": 0.39,
+     "released_mean": 0.114,
+     "benign_served": 0.83
+    },
+    "0.75": {
+     "released_worst": 0.52,
+     "released_cvar": 0.321,
+     "released_mean": 0.091,
+     "benign_served": 0.72
+    },
+    "0.8": {
+     "released_worst": 0.38,
+     "released_cvar": 0.184,
+     "released_mean": 0.052,
+     "benign_served": 0.6
+    },
+    "0.85": {
+     "released_worst": 0.17,
+     "released_cvar": 0.051,
+     "released_mean": 0.015,
+     "benign_served": 0.46
+    },
+    "0.9": {
+     "released_worst": 0.01,
+     "released_cvar": 0.005,
+     "released_mean": 0.001,
+     "benign_served": 0.25
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.02
+    }
+   }
+  },
+  "Llama-2-7b+Mistral-7B-v0.1": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.47,
+     "released_cvar": 0.353,
+     "released_mean": 0.109,
+     "benign_served": 0.6
+    },
+    "0.6": {
+     "released_worst": 0.4,
+     "released_cvar": 0.278,
+     "released_mean": 0.085,
+     "benign_served": 0.56
+    },
+    "0.7": {
+     "released_worst": 0.3,
+     "released_cvar": 0.206,
+     "released_mean": 0.063,
+     "benign_served": 0.51
+    },
+    "0.75": {
+     "released_worst": 0.22,
+     "released_cvar": 0.162,
+     "released_mean": 0.047,
+     "benign_served": 0.48
+    },
+    "0.8": {
+     "released_worst": 0.205,
+     "released_cvar": 0.112,
+     "released_mean": 0.031,
+     "benign_served": 0.44
+    },
+    "0.85": {
+     "released_worst": 0.115,
+     "released_cvar": 0.044,
+     "released_mean": 0.011,
+     "benign_served": 0.36
+    },
+    "0.9": {
+     "released_worst": 0.025,
+     "released_cvar": 0.008,
+     "released_mean": 0.002,
+     "benign_served": 0.2
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.47,
+     "released_cvar": 0.353,
+     "released_mean": 0.109,
+     "benign_served": 0.6
+    },
+    "0.6": {
+     "released_worst": 0.4,
+     "released_cvar": 0.278,
+     "released_mean": 0.085,
+     "benign_served": 0.56
+    },
+    "0.7": {
+     "released_worst": 0.3,
+     "released_cvar": 0.206,
+     "released_mean": 0.063,
+     "benign_served": 0.51
+    },
+    "0.75": {
+     "released_worst": 0.22,
+     "released_cvar": 0.162,
+     "released_mean": 0.047,
+     "benign_served": 0.48
+    },
+    "0.8": {
+     "released_worst": 0.205,
+     "released_cvar": 0.112,
+     "released_mean": 0.031,
+     "benign_served": 0.44
+    },
+    "0.85": {
+     "released_worst": 0.115,
+     "released_cvar": 0.044,
+     "released_mean": 0.011,
+     "benign_served": 0.36
+    },
+    "0.9": {
+     "released_worst": 0.025,
+     "released_cvar": 0.008,
+     "released_mean": 0.002,
+     "benign_served": 0.2
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   }
+  },
+  "Llama-2-7b+Qwen-7B": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.495,
+     "released_cvar": 0.37,
+     "released_mean": 0.114,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.42,
+     "released_cvar": 0.276,
+     "released_mean": 0.084,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.395,
+     "released_cvar": 0.208,
+     "released_mean": 0.06,
+     "benign_served": 0.54
+    },
+    "0.75": {
+     "released_worst": 0.36,
+     "released_cvar": 0.166,
+     "released_mean": 0.046,
+     "benign_served": 0.52
+    },
+    "0.8": {
+     "released_worst": 0.14,
+     "released_cvar": 0.064,
+     "released_mean": 0.017,
+     "benign_served": 0.46
+    },
+    "0.85": {
+     "released_worst": 0.025,
+     "released_cvar": 0.01,
+     "released_mean": 0.003,
+     "benign_served": 0.34
+    },
+    "0.9": {
+     "released_worst": 0.01,
+     "released_cvar": 0.002,
+     "released_mean": 0.001,
+     "benign_served": 0.16
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.495,
+     "released_cvar": 0.37,
+     "released_mean": 0.114,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.42,
+     "released_cvar": 0.276,
+     "released_mean": 0.084,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.395,
+     "released_cvar": 0.208,
+     "released_mean": 0.06,
+     "benign_served": 0.54
+    },
+    "0.75": {
+     "released_worst": 0.36,
+     "released_cvar": 0.166,
+     "released_mean": 0.046,
+     "benign_served": 0.52
+    },
+    "0.8": {
+     "released_worst": 0.14,
+     "released_cvar": 0.064,
+     "released_mean": 0.017,
+     "benign_served": 0.46
+    },
+    "0.85": {
+     "released_worst": 0.025,
+     "released_cvar": 0.01,
+     "released_mean": 0.003,
+     "benign_served": 0.34
+    },
+    "0.9": {
+     "released_worst": 0.01,
+     "released_cvar": 0.002,
+     "released_mean": 0.001,
+     "benign_served": 0.16
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.01
+    }
+   }
+  },
+  "Llama-2-7b+internlm-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.535,
+     "released_cvar": 0.4,
+     "released_mean": 0.121,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.42,
+     "released_cvar": 0.325,
+     "released_mean": 0.101,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.41,
+     "released_cvar": 0.202,
+     "released_mean": 0.063,
+     "benign_served": 0.5
+    },
+    "0.75": {
+     "released_worst": 0.375,
+     "released_cvar": 0.151,
+     "released_mean": 0.046,
+     "benign_served": 0.41
+    },
+    "0.8": {
+     "released_worst": 0.27,
+     "released_cvar": 0.103,
+     "released_mean": 0.028,
+     "benign_served": 0.35
+    },
+    "0.85": {
+     "released_worst": 0.085,
+     "released_cvar": 0.039,
+     "released_mean": 0.011,
+     "benign_served": 0.24
+    },
+    "0.9": {
+     "released_worst": 0.02,
+     "released_cvar": 0.005,
+     "released_mean": 0.001,
+     "benign_served": 0.12
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.535,
+     "released_cvar": 0.4,
+     "released_mean": 0.121,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.42,
+     "released_cvar": 0.325,
+     "released_mean": 0.101,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.41,
+     "released_cvar": 0.202,
+     "released_mean": 0.063,
+     "benign_served": 0.5
+    },
+    "0.75": {
+     "released_worst": 0.375,
+     "released_cvar": 0.151,
+     "released_mean": 0.046,
+     "benign_served": 0.41
+    },
+    "0.8": {
+     "released_worst": 0.27,
+     "released_cvar": 0.103,
+     "released_mean": 0.028,
+     "benign_served": 0.35
+    },
+    "0.85": {
+     "released_worst": 0.085,
+     "released_cvar": 0.039,
+     "released_mean": 0.011,
+     "benign_served": 0.24
+    },
+    "0.9": {
+     "released_worst": 0.02,
+     "released_cvar": 0.005,
+     "released_mean": 0.001,
+     "benign_served": 0.12
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.0
+    }
+   }
+  },
+  "Llama-2-7b+vicuna-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.6,
+     "released_cvar": 0.422,
+     "released_mean": 0.126,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.42,
+     "released_cvar": 0.299,
+     "released_mean": 0.09,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.41,
+     "released_cvar": 0.215,
+     "released_mean": 0.062,
+     "benign_served": 0.56
+    },
+    "0.75": {
+     "released_worst": 0.385,
+     "released_cvar": 0.2,
+     "released_mean": 0.056,
+     "benign_served": 0.5
+    },
+    "0.8": {
+     "released_worst": 0.32,
+     "released_cvar": 0.149,
+     "released_mean": 0.039,
+     "benign_served": 0.47
+    },
+    "0.85": {
+     "released_worst": 0.13,
+     "released_cvar": 0.059,
+     "released_mean": 0.015,
+     "benign_served": 0.37
+    },
+    "0.9": {
+     "released_worst": 0.015,
+     "released_cvar": 0.007,
+     "released_mean": 0.002,
+     "benign_served": 0.18
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.03
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.6,
+     "released_cvar": 0.422,
+     "released_mean": 0.126,
+     "benign_served": 0.61
+    },
+    "0.6": {
+     "released_worst": 0.42,
+     "released_cvar": 0.299,
+     "released_mean": 0.09,
+     "benign_served": 0.59
+    },
+    "0.7": {
+     "released_worst": 0.41,
+     "released_cvar": 0.215,
+     "released_mean": 0.062,
+     "benign_served": 0.56
+    },
+    "0.75": {
+     "released_worst": 0.385,
+     "released_cvar": 0.2,
+     "released_mean": 0.056,
+     "benign_served": 0.5
+    },
+    "0.8": {
+     "released_worst": 0.32,
+     "released_cvar": 0.149,
+     "released_mean": 0.039,
+     "benign_served": 0.47
+    },
+    "0.85": {
+     "released_worst": 0.13,
+     "released_cvar": 0.059,
+     "released_mean": 0.015,
+     "benign_served": 0.37
+    },
+    "0.9": {
+     "released_worst": 0.015,
+     "released_cvar": 0.007,
+     "released_mean": 0.002,
+     "benign_served": 0.18
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.03
+    }
+   }
+  },
+  "Mistral-7B-v0.1+Qwen-7B": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.21,
+     "released_cvar": 0.176,
+     "released_mean": 0.081,
+     "benign_served": 0.88
+    },
+    "0.6": {
+     "released_worst": 0.145,
+     "released_cvar": 0.105,
+     "released_mean": 0.058,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.085,
+     "released_cvar": 0.069,
+     "released_mean": 0.033,
+     "benign_served": 0.84
+    },
+    "0.75": {
+     "released_worst": 0.08,
+     "released_cvar": 0.057,
+     "released_mean": 0.024,
+     "benign_served": 0.82
+    },
+    "0.8": {
+     "released_worst": 0.07,
+     "released_cvar": 0.041,
+     "released_mean": 0.014,
+     "benign_served": 0.75
+    },
+    "0.85": {
+     "released_worst": 0.05,
+     "released_cvar": 0.021,
+     "released_mean": 0.006,
+     "benign_served": 0.63
+    },
+    "0.9": {
+     "released_worst": 0.015,
+     "released_cvar": 0.006,
+     "released_mean": 0.002,
+     "benign_served": 0.4
+    },
+    "0.95": {
+     "released_worst": 0.01,
+     "released_cvar": 0.002,
+     "released_mean": 0.001,
+     "benign_served": 0.08
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.21,
+     "released_cvar": 0.176,
+     "released_mean": 0.081,
+     "benign_served": 0.88
+    },
+    "0.6": {
+     "released_worst": 0.145,
+     "released_cvar": 0.105,
+     "released_mean": 0.058,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.085,
+     "released_cvar": 0.069,
+     "released_mean": 0.033,
+     "benign_served": 0.84
+    },
+    "0.75": {
+     "released_worst": 0.08,
+     "released_cvar": 0.057,
+     "released_mean": 0.024,
+     "benign_served": 0.82
+    },
+    "0.8": {
+     "released_worst": 0.07,
+     "released_cvar": 0.041,
+     "released_mean": 0.014,
+     "benign_served": 0.75
+    },
+    "0.85": {
+     "released_worst": 0.05,
+     "released_cvar": 0.021,
+     "released_mean": 0.006,
+     "benign_served": 0.63
+    },
+    "0.9": {
+     "released_worst": 0.015,
+     "released_cvar": 0.006,
+     "released_mean": 0.002,
+     "benign_served": 0.4
+    },
+    "0.95": {
+     "released_worst": 0.01,
+     "released_cvar": 0.002,
+     "released_mean": 0.001,
+     "benign_served": 0.08
+    }
+   }
+  },
+  "Mistral-7B-v0.1+internlm-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.22,
+     "released_cvar": 0.175,
+     "released_mean": 0.081,
+     "benign_served": 0.9
+    },
+    "0.6": {
+     "released_worst": 0.185,
+     "released_cvar": 0.119,
+     "released_mean": 0.062,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.145,
+     "released_cvar": 0.097,
+     "released_mean": 0.044,
+     "benign_served": 0.79
+    },
+    "0.75": {
+     "released_worst": 0.1,
+     "released_cvar": 0.08,
+     "released_mean": 0.034,
+     "benign_served": 0.71
+    },
+    "0.8": {
+     "released_worst": 0.07,
+     "released_cvar": 0.054,
+     "released_mean": 0.021,
+     "benign_served": 0.6
+    },
+    "0.85": {
+     "released_worst": 0.05,
+     "released_cvar": 0.034,
+     "released_mean": 0.011,
+     "benign_served": 0.45
+    },
+    "0.9": {
+     "released_worst": 0.025,
+     "released_cvar": 0.018,
+     "released_mean": 0.005,
+     "benign_served": 0.25
+    },
+    "0.95": {
+     "released_worst": 0.02,
+     "released_cvar": 0.007,
+     "released_mean": 0.002,
+     "benign_served": 0.02
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.22,
+     "released_cvar": 0.175,
+     "released_mean": 0.081,
+     "benign_served": 0.9
+    },
+    "0.6": {
+     "released_worst": 0.185,
+     "released_cvar": 0.119,
+     "released_mean": 0.062,
+     "benign_served": 0.87
+    },
+    "0.7": {
+     "released_worst": 0.145,
+     "released_cvar": 0.097,
+     "released_mean": 0.044,
+     "benign_served": 0.79
+    },
+    "0.75": {
+     "released_worst": 0.1,
+     "released_cvar": 0.08,
+     "released_mean": 0.034,
+     "benign_served": 0.71
+    },
+    "0.8": {
+     "released_worst": 0.07,
+     "released_cvar": 0.054,
+     "released_mean": 0.021,
+     "benign_served": 0.6
+    },
+    "0.85": {
+     "released_worst": 0.05,
+     "released_cvar": 0.034,
+     "released_mean": 0.011,
+     "benign_served": 0.45
+    },
+    "0.9": {
+     "released_worst": 0.025,
+     "released_cvar": 0.018,
+     "released_mean": 0.005,
+     "benign_served": 0.25
+    },
+    "0.95": {
+     "released_worst": 0.02,
+     "released_cvar": 0.007,
+     "released_mean": 0.002,
+     "benign_served": 0.02
+    }
+   }
+  },
+  "Mistral-7B-v0.1+vicuna-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.28,
+     "released_cvar": 0.191,
+     "released_mean": 0.085,
+     "benign_served": 0.92
+    },
+    "0.6": {
+     "released_worst": 0.195,
+     "released_cvar": 0.119,
+     "released_mean": 0.063,
+     "benign_served": 0.91
+    },
+    "0.7": {
+     "released_worst": 0.14,
+     "released_cvar": 0.096,
+     "released_mean": 0.047,
+     "benign_served": 0.91
+    },
+    "0.75": {
+     "released_worst": 0.1,
+     "released_cvar": 0.075,
+     "released_mean": 0.035,
+     "benign_served": 0.88
+    },
+    "0.8": {
+     "released_worst": 0.075,
+     "released_cvar": 0.06,
+     "released_mean": 0.024,
+     "benign_served": 0.81
+    },
+    "0.85": {
+     "released_worst": 0.06,
+     "released_cvar": 0.038,
+     "released_mean": 0.013,
+     "benign_served": 0.65
+    },
+    "0.9": {
+     "released_worst": 0.035,
+     "released_cvar": 0.018,
+     "released_mean": 0.005,
+     "benign_served": 0.44
+    },
+    "0.95": {
+     "released_worst": 0.025,
+     "released_cvar": 0.005,
+     "released_mean": 0.001,
+     "benign_served": 0.13
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.28,
+     "released_cvar": 0.191,
+     "released_mean": 0.085,
+     "benign_served": 0.92
+    },
+    "0.6": {
+     "released_worst": 0.195,
+     "released_cvar": 0.119,
+     "released_mean": 0.063,
+     "benign_served": 0.91
+    },
+    "0.7": {
+     "released_worst": 0.14,
+     "released_cvar": 0.096,
+     "released_mean": 0.047,
+     "benign_served": 0.91
+    },
+    "0.75": {
+     "released_worst": 0.1,
+     "released_cvar": 0.075,
+     "released_mean": 0.035,
+     "benign_served": 0.88
+    },
+    "0.8": {
+     "released_worst": 0.075,
+     "released_cvar": 0.06,
+     "released_mean": 0.024,
+     "benign_served": 0.81
+    },
+    "0.85": {
+     "released_worst": 0.06,
+     "released_cvar": 0.038,
+     "released_mean": 0.013,
+     "benign_served": 0.65
+    },
+    "0.9": {
+     "released_worst": 0.035,
+     "released_cvar": 0.018,
+     "released_mean": 0.005,
+     "benign_served": 0.44
+    },
+    "0.95": {
+     "released_worst": 0.025,
+     "released_cvar": 0.005,
+     "released_mean": 0.001,
+     "benign_served": 0.13
+    }
+   }
+  },
+  "Qwen-7B+internlm-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.7,
+     "released_cvar": 0.481,
+     "released_mean": 0.144,
+     "benign_served": 0.73
+    },
+    "0.6": {
+     "released_worst": 0.7,
+     "released_cvar": 0.422,
+     "released_mean": 0.126,
+     "benign_served": 0.73
+    },
+    "0.7": {
+     "released_worst": 0.61,
+     "released_cvar": 0.338,
+     "released_mean": 0.101,
+     "benign_served": 0.69
+    },
+    "0.75": {
+     "released_worst": 0.375,
+     "released_cvar": 0.211,
+     "released_mean": 0.063,
+     "benign_served": 0.6
+    },
+    "0.8": {
+     "released_worst": 0.17,
+     "released_cvar": 0.088,
+     "released_mean": 0.027,
+     "benign_served": 0.52
+    },
+    "0.85": {
+     "released_worst": 0.055,
+     "released_cvar": 0.025,
+     "released_mean": 0.007,
+     "benign_served": 0.45
+    },
+    "0.9": {
+     "released_worst": 0.03,
+     "released_cvar": 0.01,
+     "released_mean": 0.002,
+     "benign_served": 0.26
+    },
+    "0.95": {
+     "released_worst": 0.01,
+     "released_cvar": 0.002,
+     "released_mean": 0.001,
+     "benign_served": 0.04
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.7,
+     "released_cvar": 0.481,
+     "released_mean": 0.144,
+     "benign_served": 0.73
+    },
+    "0.6": {
+     "released_worst": 0.7,
+     "released_cvar": 0.422,
+     "released_mean": 0.126,
+     "benign_served": 0.73
+    },
+    "0.7": {
+     "released_worst": 0.61,
+     "released_cvar": 0.338,
+     "released_mean": 0.101,
+     "benign_served": 0.69
+    },
+    "0.75": {
+     "released_worst": 0.375,
+     "released_cvar": 0.211,
+     "released_mean": 0.063,
+     "benign_served": 0.6
+    },
+    "0.8": {
+     "released_worst": 0.17,
+     "released_cvar": 0.088,
+     "released_mean": 0.027,
+     "benign_served": 0.52
+    },
+    "0.85": {
+     "released_worst": 0.055,
+     "released_cvar": 0.025,
+     "released_mean": 0.007,
+     "benign_served": 0.45
+    },
+    "0.9": {
+     "released_worst": 0.03,
+     "released_cvar": 0.01,
+     "released_mean": 0.002,
+     "benign_served": 0.26
+    },
+    "0.95": {
+     "released_worst": 0.01,
+     "released_cvar": 0.002,
+     "released_mean": 0.001,
+     "benign_served": 0.04
+    }
+   }
+  },
+  "Qwen-7B+vicuna-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.7,
+     "released_cvar": 0.477,
+     "released_mean": 0.142,
+     "benign_served": 0.74
+    },
+    "0.6": {
+     "released_worst": 0.69,
+     "released_cvar": 0.418,
+     "released_mean": 0.123,
+     "benign_served": 0.74
+    },
+    "0.7": {
+     "released_worst": 0.66,
+     "released_cvar": 0.37,
+     "released_mean": 0.104,
+     "benign_served": 0.73
+    },
+    "0.75": {
+     "released_worst": 0.615,
+     "released_cvar": 0.339,
+     "released_mean": 0.091,
+     "benign_served": 0.7
+    },
+    "0.8": {
+     "released_worst": 0.46,
+     "released_cvar": 0.255,
+     "released_mean": 0.067,
+     "benign_served": 0.65
+    },
+    "0.85": {
+     "released_worst": 0.125,
+     "released_cvar": 0.083,
+     "released_mean": 0.022,
+     "benign_served": 0.62
+    },
+    "0.9": {
+     "released_worst": 0.005,
+     "released_cvar": 0.001,
+     "released_mean": 0.0,
+     "benign_served": 0.41
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.12
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.7,
+     "released_cvar": 0.477,
+     "released_mean": 0.142,
+     "benign_served": 0.74
+    },
+    "0.6": {
+     "released_worst": 0.69,
+     "released_cvar": 0.418,
+     "released_mean": 0.123,
+     "benign_served": 0.74
+    },
+    "0.7": {
+     "released_worst": 0.66,
+     "released_cvar": 0.37,
+     "released_mean": 0.104,
+     "benign_served": 0.73
+    },
+    "0.75": {
+     "released_worst": 0.615,
+     "released_cvar": 0.339,
+     "released_mean": 0.091,
+     "benign_served": 0.7
+    },
+    "0.8": {
+     "released_worst": 0.46,
+     "released_cvar": 0.255,
+     "released_mean": 0.067,
+     "benign_served": 0.65
+    },
+    "0.85": {
+     "released_worst": 0.125,
+     "released_cvar": 0.083,
+     "released_mean": 0.022,
+     "benign_served": 0.62
+    },
+    "0.9": {
+     "released_worst": 0.005,
+     "released_cvar": 0.001,
+     "released_mean": 0.0,
+     "benign_served": 0.41
+    },
+    "0.95": {
+     "released_worst": 0.0,
+     "released_cvar": 0.0,
+     "released_mean": 0.0,
+     "benign_served": 0.12
+    }
+   }
+  },
+  "internlm-7b+vicuna-7b": {
+   "qwen3": {
+    "0.5": {
+     "released_worst": 0.725,
+     "released_cvar": 0.539,
+     "released_mean": 0.174,
+     "benign_served": 0.55
+    },
+    "0.6": {
+     "released_worst": 0.695,
+     "released_cvar": 0.46,
+     "released_mean": 0.147,
+     "benign_served": 0.55
+    },
+    "0.7": {
+     "released_worst": 0.575,
+     "released_cvar": 0.365,
+     "released_mean": 0.107,
+     "benign_served": 0.52
+    },
+    "0.75": {
+     "released_worst": 0.455,
+     "released_cvar": 0.271,
+     "released_mean": 0.079,
+     "benign_served": 0.49
+    },
+    "0.8": {
+     "released_worst": 0.335,
+     "released_cvar": 0.158,
+     "released_mean": 0.046,
+     "benign_served": 0.44
+    },
+    "0.85": {
+     "released_worst": 0.15,
+     "released_cvar": 0.065,
+     "released_mean": 0.019,
+     "benign_served": 0.35
+    },
+    "0.9": {
+     "released_worst": 0.02,
+     "released_cvar": 0.012,
+     "released_mean": 0.004,
+     "benign_served": 0.21
+    },
+    "0.95": {
+     "released_worst": 0.005,
+     "released_cvar": 0.001,
+     "released_mean": 0.0,
+     "benign_served": 0.03
+    }
+   },
+   "either": {
+    "0.5": {
+     "released_worst": 0.725,
+     "released_cvar": 0.539,
+     "released_mean": 0.174,
+     "benign_served": 0.55
+    },
+    "0.6": {
+     "released_worst": 0.695,
+     "released_cvar": 0.46,
+     "released_mean": 0.147,
+     "benign_served": 0.55
+    },
+    "0.7": {
+     "released_worst": 0.575,
+     "released_cvar": 0.365,
+     "released_mean": 0.107,
+     "benign_served": 0.52
+    },
+    "0.75": {
+     "released_worst": 0.455,
+     "released_cvar": 0.271,
+     "released_mean": 0.079,
+     "benign_served": 0.49
+    },
+    "0.8": {
+     "released_worst": 0.335,
+     "released_cvar": 0.158,
+     "released_mean": 0.046,
+     "benign_served": 0.44
+    },
+    "0.85": {
+     "released_worst": 0.15,
+     "released_cvar": 0.065,
+     "released_mean": 0.019,
+     "benign_served": 0.35
+    },
+    "0.9": {
+     "released_worst": 0.02,
+     "released_cvar": 0.012,
+     "released_mean": 0.004,
+     "benign_served": 0.21
+    },
+    "0.95": {
+     "released_worst": 0.005,
+     "released_cvar": 0.001,
+     "released_mean": 0.0,
+     "benign_served": 0.03
+    }
+   }
+  }
+ }
+}

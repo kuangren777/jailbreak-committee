@@ -1,0 +1,344 @@
+{
+ "heldout_released": {
+  "either": {
+   "single": 0.7319800000000001,
+   "jbs": 0.29595,
+   "comonotone": 0.38835000000000003,
+   "single_served": 0.62,
+   "jbs_served": 0.6357999999999999,
+   "gain_vs_single": 0.4360300000000001,
+   "gain_vs_single_ci90": [
+    0.018000000000000117,
+    0.5341000000000001
+   ],
+   "p_gain_pos": 1.0,
+   "gain_vs_com": 0.09240000000000002,
+   "gain_vs_com_ci90": [
+    -0.4761000000000002,
+    0.49210000000000015
+   ]
+  },
+  "qwen3": {
+   "single": 0.66281,
+   "jbs": 0.62712,
+   "comonotone": 0.46427,
+   "single_served": 0.62,
+   "jbs_served": 0.6109500000000001,
+   "gain_vs_single": 0.035690000000000006,
+   "gain_vs_single_ci90": [
+    0.013999999999999896,
+    0.033999999999999926
+   ],
+   "p_gain_pos": 1.0,
+   "gain_vs_com": -0.16285000000000005,
+   "gain_vs_com_ci90": [
+    -0.42610000000000015,
+    -0.0039000000000000376
+   ]
+  }
+ },
+ "service_levels": {
+  "bought": "Baichuan2-7b+Llama-2-7b",
+  "sweep": {
+   "0.5": {
+    "released": 0.886,
+    "served": 0.96
+   },
+   "0.6": {
+    "released": 0.831,
+    "served": 0.87
+   },
+   "0.7": {
+    "released": 0.609,
+    "served": 0.79
+   },
+   "0.75": {
+    "released": 0.416,
+    "served": 0.73
+   },
+   "0.8": {
+    "released": 0.227,
+    "served": 0.64
+   },
+   "0.85": {
+    "released": 0.06,
+    "served": 0.42
+   },
+   "0.9": {
+    "released": 0.004,
+    "served": 0.14
+   },
+   "0.95": {
+    "released": 0.0,
+    "served": 0.01
+   }
+  },
+  "singles": {
+   "Baichuan2-7b": {
+    "released": 0.913,
+    "served": 0.99
+   },
+   "Llama-2-7b": {
+    "released": 0.731,
+    "served": 0.62
+   },
+   "Mistral-7B-v0.1": {
+    "released": 0.966,
+    "served": 1.0
+   },
+   "Qwen-7B": {
+    "released": 0.808,
+    "served": 0.77
+   },
+   "internlm-7b": {
+    "released": 0.941,
+    "served": 0.58
+   },
+   "vicuna-7b": {
+    "released": 0.899,
+    "served": 0.88
+   }
+  },
+  "at_0.6": {
+   "tau": 0.8,
+   "released": 0.227,
+   "served": 0.64,
+   "best_single_at_or_above": [
+    0.7310000000000003,
+    "Llama-2-7b"
+   ]
+  },
+  "at_0.8": {
+   "tau": 0.7,
+   "released": 0.609,
+   "served": 0.79,
+   "best_single_at_or_above": [
+    0.8080000000000004,
+    "Qwen-7B"
+   ]
+  },
+  "at_0.9": {
+   "tau": 0.6,
+   "released": 0.831,
+   "served": 0.87,
+   "best_single_at_or_above": [
+    0.8990000000000004,
+    "vicuna-7b"
+   ]
+  }
+ },
+ "equal_cost_qwen3": {
+  "single": {
+   "who": "Llama-2-7b",
+   "released": 0.662,
+   "served": 0.62,
+   "calls": 1
+  },
+  "single_guard": {
+   "who": "Mistral-7B-v0.1",
+   "released": 0.263,
+   "served": 0.93,
+   "calls": 2
+  },
+  "jbs_pair": {
+   "who": "Llama-2-7b+vicuna-7b",
+   "released": 0.642,
+   "served": 0.61,
+   "calls": 2,
+   "tau": 0.5
+  },
+  "jbs_pair_guard": {
+   "who": "Mistral-7B-v0.1+vicuna-7b",
+   "released": 0.191,
+   "served": 0.92,
+   "calls": 3,
+   "tau": 0.5
+  }
+ },
+ "independence_split": {
+  "guard": {
+   "independence": 0.26371,
+   "jbs": 0.26075,
+   "diff": 0.002959999999999999,
+   "diff_ci90": [
+    0.0,
+    0.002499999999999144
+   ]
+  },
+  "qwen3": {
+   "independence": 0.5128900000000001,
+   "jbs": 0.41668,
+   "diff": 0.09621000000000002,
+   "diff_ci90": [
+    0.04000000000000003,
+    0.1681000000000001
+   ]
+  },
+  "either": {
+   "independence": 0.57575,
+   "jbs": 0.56122,
+   "diff": 0.014530000000000012,
+   "diff_ci90": [
+    0.0,
+    0.04999999999999994
+   ]
+  },
+  "both": {
+   "independence": 0.20105,
+   "jbs": 0.19376,
+   "diff": 0.00729,
+   "diff_ci90": [
+    0.0,
+    0.021999999999999992
+   ]
+  },
+  "filtered": {
+   "independence": 0.08392,
+   "jbs": 0.08366,
+   "diff": 0.00026000000000000025,
+   "diff_ci90": [
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "kappa": {
+  "n": 22811,
+  "agree": 0.7891368199552847,
+  "kappa": 0.5611548519856225
+ },
+ "alpha": {
+  "either": {
+   "0.050": {
+    "winner": "Baichuan2-7b+Llama-2-7b",
+    "W": 0.635,
+    "best_single_W": 0.8,
+    "gate_accept": true,
+    "gain_q10": 0.125
+   },
+   "0.250": {
+    "winner": "Baichuan2-7b+Llama-2-7b",
+    "W": 0.555,
+    "best_single_W": 0.731,
+    "gate_accept": true,
+    "gain_q10": 0.159
+   },
+   "0.500": {
+    "winner": "Baichuan2-7b+Llama-2-7b",
+    "W": 0.367,
+    "best_single_W": 0.556,
+    "gate_accept": true,
+    "gain_q10": 0.178
+   },
+   "1.000": {
+    "winner": "Baichuan2-7b+Llama-2-7b",
+    "W": 0.184,
+    "best_single_W": 0.28,
+    "gate_accept": true,
+    "gain_q10": 0.091
+   }
+  },
+  "qwen3": {
+   "0.050": {
+    "winner": "Llama-2-7b+vicuna-7b",
+    "W": 0.525,
+    "best_single_W": 0.71,
+    "gate_accept": true,
+    "gain_q10": 0.155
+   },
+   "0.250": {
+    "winner": "Llama-2-7b+vicuna-7b",
+    "W": 0.412,
+    "best_single_W": 0.662,
+    "gate_accept": true,
+    "gain_q10": 0.23
+   },
+   "0.500": {
+    "winner": "Llama-2-7b+vicuna-7b",
+    "W": 0.273,
+    "best_single_W": 0.494,
+    "gate_accept": true,
+    "gain_q10": 0.209
+   },
+   "1.000": {
+    "winner": "Llama-2-7b+vicuna-7b",
+    "W": 0.137,
+    "best_single_W": 0.248,
+    "gate_accept": true,
+    "gain_q10": 0.105
+   }
+  },
+  "guard": {
+   "0.050": {
+    "winner": "Baichuan2-7b+Llama-2-7b",
+    "W": 0.38,
+    "best_single_W": 0.68,
+    "gate_accept": true,
+    "gain_q10": 0.24
+   },
+   "0.250": {
+    "winner": "Baichuan2-7b+Llama-2-7b",
+    "W": 0.26,
+    "best_single_W": 0.484,
+    "gate_accept": true,
+    "gain_q10": 0.208
+   },
+   "0.500": {
+    "winner": "Baichuan2-7b+Llama-2-7b",
+    "W": 0.137,
+    "best_single_W": 0.282,
+    "gate_accept": true,
+    "gain_q10": 0.135
+   },
+   "1.000": {
+    "winner": "Baichuan2-7b+Llama-2-7b",
+    "W": 0.068,
+    "best_single_W": 0.141,
+    "gate_accept": true,
+    "gain_q10": 0.068
+   }
+  }
+ },
+ "llama_vicuna": {
+  "guard": {
+   "W": 0.325,
+   "best_single_W": 0.484,
+   "rank_among_15_pairs": 4,
+   "gate_accept": true,
+   "gain_q10": 0.143,
+   "p_beats_best_single": 1.0
+  },
+  "qwen3": {
+   "W": 0.412,
+   "best_single_W": 0.662,
+   "rank_among_15_pairs": 1,
+   "gate_accept": true,
+   "gain_q10": 0.23,
+   "p_beats_best_single": 1.0
+  },
+  "either": {
+   "W": 0.572,
+   "best_single_W": 0.731,
+   "rank_among_15_pairs": 2,
+   "gate_accept": true,
+   "gain_q10": 0.142,
+   "p_beats_best_single": 1.0
+  },
+  "both": {
+   "W": 0.249,
+   "best_single_W": 0.436,
+   "rank_among_15_pairs": 4,
+   "gate_accept": true,
+   "gain_q10": 0.17,
+   "p_beats_best_single": 1.0
+  },
+  "filtered": {
+   "W": 0.153,
+   "best_single_W": 0.263,
+   "rank_among_15_pairs": 6,
+   "gate_accept": true,
+   "gain_q10": 0.089,
+   "p_beats_best_single": 1.0
+  }
+ }
+}

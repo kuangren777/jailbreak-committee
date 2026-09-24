@@ -1,24 +1,32 @@
-# Selecting a Two-Model Committee for Jailbreak Defense with a Calibrated Identifiability Gate
+# JBS: Buying a Second Model for Jailbreak Defense by Observed Joint Breach
 
-Code and aggregate results for the paper. A deployer calibrates one susceptibility
-matrix, ranks two-model committees by a bound that holds under any dependence between
-members, and runs a bootstrap gate that says whether that ranking is identified at all.
-On a 2023 pool of six open-weight chat models the gate accepts a pair that cuts the
-worst-case attack success rate from 0.68 to 0.48. On a second pool of six hosted models
-the same gate declines the second model under two independent judges.
+Code and aggregate results for the paper. A one-time calibration records whether a judge
+finds each model's answer harmful for every attack prompt and harmful behavior. From these
+verdicts Joint-Breach Selection (JBS) measures the joint breach of each committee, the
+fraction of behaviors on which one prompt penetrates a majority of its members, ranks
+committees over the worst quarter of attack prompts and buys a committee only when a
+behavior-level bootstrap gate finds it beats the best single model by a required margin.
+On a pool of six open 7B chat models JBS buys Baichuan2 and Llama-2, lowering the released
+worst-quarter attack success rate from 0.73 to 0.23. On a pool of six hosted models the
+gate keeps the single model.
 
-**Raw attack prompts and model outputs are withheld. Aggregate verdicts are released.**
+**Raw attack prompts, model outputs and answer embeddings are withheld. Verdict-level
+aggregates are released.**
 
 ## Layout
 
 ```
-attacks/     calibration, judging, adjudication and gate scripts
+attacks/     calibration, judging, embedding and panel scripts
 dhr/         executor wrappers for the committee
-scripts/     shared calibration helper
-tools/       analysis scripts and the aggregate json each paper number traces to
+tools/       committee_select.py (selection and gate), serving_replay.py (adjudicator replay),
+             the review analyses and the aggregate json each paper number traces to
+tests/       unit tests for the selection and gate code
 results/     verdict-level aggregates, no prompt text and no model output
+             scale/           open pool, 200 behaviors x 20 variants x 6 models, two judges
+             hub2026_scale/   hosted pool, two judges
+             panel/           third-party panel verdicts on judge disagreements
 withheld/    what is deliberately absent and how to substitute it
-reproduce.py recomputes every gate number in the paper from results/
+reproduce.py recomputes the selection and gate numbers of the paper from results/
 ```
 
 ## Reproducing the paper without any inference
@@ -28,44 +36,40 @@ git clone <this repository> && cd jailbreak-committee
 python3 reproduce.py
 ```
 
-Reads only `results/`, runs the bootstrap gate on both pools, and prints the value the
-paper reports beside the value recomputed here. Runtime is about twenty seconds on a
-laptop, and it needs `numpy` and nothing else. Nineteen of nineteen checks reproduce.
+Reads only `results/` and `tools/serving_replay_scale.json`, reruns selection and the
+bootstrap gate on both pools and prints each value the paper reports beside the value
+recomputed here. Runtime is about three minutes on one CPU core and it needs `numpy`
+only. All 22 checks reproduce.
 
-Figures come from `tools/make_icassp_figs.py`, which reads the same aggregates.
+The released-harm numbers come from replaying the adjudicator on BGE-M3 answer
+embeddings (`tools/serving_replay.py`). The embeddings are derived from the withheld
+model outputs, so the replay results are released as `tools/serving_replay_scale.json`
+instead. The review analyses (`tools/review_checks.py`, `tools/review_b.py`,
+`tools/paired_split.py`, `tools/rank_check.py`) run on `results/` and those json files.
 
 ## Rerunning the measurement from scratch
 
 This regenerates model responses and therefore needs hardware and a prompt generator.
 
-| Stage | What it needs | Cost |
-|---|---|---|
-| First pool generation | one 80 GB GPU, vLLM, six 7B chat models served in sequence | about 6 h for 6 models times 20 variants times 25 behaviors |
-| First pool judging | Llama Guard 3 8B and Qwen3-14B on the same GPU | about 1 h per judge for 3000 responses |
-| Second pool generation | an OpenAI-compatible gateway, no local GPU | about 2 h at 6 to 12 concurrent requests |
-| Second pool judging | the same gateway, two judges outside the pool | about 1 h per judge |
-| Adaptive attacker | one GPU for the attacker model and the target | about 2 h for 25 behaviors at 4 iterations |
+| Stage | What it needs |
+|---|---|
+| Open pool generation | one 48 GB GPU, vLLM, six 7B chat models served in sequence (`attacks/scale_suite.sh`) |
+| Open pool judging | Llama Guard 3 8B and Qwen3-14B (`attacks/judge2_resume.py`) |
+| Answer embeddings | BGE-M3 (`attacks/embed_responses.py`) |
+| Hosted pool generation and judging | an OpenAI-compatible gateway, no local GPU (`attacks/hub_scale.sh`, `attacks/hub_judge.py`) |
+| Panel audit of judge disagreements | the same gateway (`attacks/panel_adjudicate.py`) |
 
 `attacks/trial_attacks.py` builds the prompt variants and is **not** in this repository.
 See `withheld/README.md` for the interface to implement and why it is absent.
 
-Entry points, in order:
-
-```bash
-python3 attacks/calibrate_vuln.py      # first pool, serve with attacks/serve_*.sh first
-python3 attacks/rescore_judge.py       # rebuild the matrix once per judge
-python3 attacks/hub_calibrate.py       # second pool, one model per invocation
-python3 attacks/hub_judge.py           # second pool, one judge per invocation
-python3 attacks/gate.py                # the identifiability gate
-python3 attacks/pool_summary.py        # per-model worst case and judge agreement
-python3 attacks/pair_released.py       # what the adjudicator actually releases
-python3 attacks/pair_adaptive.py       # tuned attacker against the deployed pair
-```
-
-The second pool is served by an OpenAI-compatible gateway. Point the client at it with
+The hosted pool is served by an OpenAI-compatible gateway. Point the client at it with
 `GATEWAY_URL` and `GATEWAY_KEY`, or with a mode-600 file named by `GATEWAY_ENV_FILE`
 that carries those two keys. Credentials are never written to this repository or to any
 result file.
+
+Earlier scripts from the first version of this study (`attacks/gate.py`,
+`attacks/pair_*.py`, `results/matrix`, `results/pair`) remain for reference and are not
+needed for the numbers above.
 
 ## Models
 
