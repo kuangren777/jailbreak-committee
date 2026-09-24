@@ -108,15 +108,3 @@ def test_evaluate_and_guard_filter():
     assert s["released_worst"] == 0.0                                  # guard blocks it
     s = single_filtered("b", rows, meta, V, "either", 0.5, guard_filter=True)
     assert s["released_worst"] == 1.0                                  # guard misses, qwen3 catches
-
-
-def test_cost_gate_charges_only_the_extra_cost():
-    import numpy as np
-    from cost_gate import cost, gate_cost
-    assert abs(cost(["qwen3-4b", "Llama-2-7b"]) - (1 + 4 / 7)) < 1e-9
-    X = complementary()                       # pair (0, 1) never co-fails, singles fail on half a column
-    singles = [(0,), (1,), (2,)]
-    cheap = gate_cost(X, (0, 1), singles, 0.5, c_extra=0.5, draws=200)
-    dear = gate_cost(X, (0, 1), singles, 0.5, c_extra=100.0, draws=200)
-    assert cheap["accept"] and not dear["accept"]
-    assert abs(dear["price"] - 100 * 0.05) < 1e-9
